@@ -1,0 +1,52 @@
+#intro-section {
+  width: 100%;
+  margin: 0px auto;
+  position: relative;
+  overflow: hidden;
+  video {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .video-js {
+    background: #fff;
+  }
+  #hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: none;
+    .container {
+      @include flexbox;
+      @include flexdirection(row);
+      @include flexAlignItems(center);
+        h1 {
+          text-shadow: 0px 2px 9px rgba(0, 0, 0, 0.3);
+          color: #fff;
+        }
+    }
+  }
+  #get-started {
+    position: absolute;
+    bottom: 50px;
+    @include font-size(70px);
+    left: 50%;
+    margin-left: -25px;
+    background: none;
+    font-weight: 700;
+    border: 0;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+#sub-intro-section {
+  background: $gsBlue;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+  @include font-size(30px);
+  @include box-shadow(0 3px 8px -8px, black);
+  position: relative;
+}

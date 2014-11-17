@@ -1,0 +1,21 @@
+#team-graphic {
+  li {
+    max-width: 16.66%;
+    overflow: hidden;
+    display: block;
+    float: left;
+      @include desktops {
+        max-width: 33.33%;
+      }
+      hgroup {
+        border-top: 5px solid $gsBlue;
+        text-align: center;
+          h4 {
+            font-weight: 700;
+          }
+          h5 {
+            font-weight: 300;
+          }
+      }
+  }
+}

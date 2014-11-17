@@ -1,0 +1,63 @@
+#footer {
+  background: #333;
+  padding-top: 50px;
+  @include box-shadow(inset 0px 5px 8px 0px , rgba(0,0,0,0.7));
+    #site-map {
+      li {
+        padding: 5px 0;
+        text-transform: uppercase;
+        font-weight: 300;
+        a {
+          color: #fff;
+        }
+      }
+    }
+    #jump-buttons {
+      li {
+        text-transform: uppercase;
+        margin: 0 0 10px;
+        padding-top: 5px;
+        text-align: center;
+        font-weight: 700;
+        a {
+          color: #fff;
+          line-height: 1.8;
+          display: block;
+          border: 1px solid #fff;
+        }
+      }
+    }
+    #contact-info {
+      h4 {
+        margin: 0 0 15px;
+        padding-top: 5px;
+        line-height: 1.8;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      li {
+        a {
+          color: #eaeaea;
+          padding: 5px 0;
+          position: relative;
+          display: block;
+          padding-left: 30px;
+            i {
+              position: absolute;
+              top: 9px;
+              left: 0;
+            }
+        }
+      }
+    }
+    #copyright {
+      background: rgba(0,0,0,0.3);
+      color: #eaeaea;
+      padding: 15px 0;
+      margin-top: 20px;
+        p {
+          margin: 0;
+        }
+    }
+}

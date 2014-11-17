@@ -1,0 +1,141 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:900);
+@import 'glyphs';
+@import 'variable';
+@import 'mixins';
+@import 'primary-navigation';
+@import 'videojs';
+@import 'intro';
+@import 'sections';
+@import 'petitions';
+@import 'custom-scrollbar';
+@import 'blog-posts';
+@import 'team';
+@import 'footer';
+
+
+/* gs bootstrap */
+body {
+  font-size: 16px;
+  font-family: $alphaCustomFont;
+  visibility: hidden;
+}
+
+a, button {
+  @include transition(all 0.4s);
+  color: inherit;
+    &:hover {
+      text-decoration: none;
+      color: $defaultHoverColor!important;
+    }
+}
+p a {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 700;
+  @include font-size(30px);
+}
+.gs-btn {
+  @include border-radius(0);
+  @include font-size(22px);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 0;
+    &:hover {
+      color: inherit!important;
+    }
+}
+.gs-btn-blue {
+  background: $gsBlue;
+  color: #fff;
+}
+.gs-btn-orange {
+  background: $gsOrange;
+  color: #fff;
+}
+.gs-btn-white {
+  background: #fff;
+  color: #333;
+    &:hover {
+      color: #333!important;
+    }
+}
+
+button:active {
+  border: 0;
+}
+
+#back-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  @include font-size(100px);
+  color: rgba(0,0,0,0.5);
+  opacity: 0;
+  cursor: pointer;
+    &:hover {
+      color: rgba(0,0,0,1);
+    }
+}
+
+// JUMBOTRON
+.page-header {
+  padding-top: 50px;
+}
+.jumbotron {
+  background: none;
+  color: #fff;
+  padding-left: 0 !important;
+  padding-right: 0;
+  text-transform: uppercase;
+  h1 {
+    font-weight: 300;
+    color: $gsBlue;
+    @include large-desktops {
+      @include font-size(70px);
+    }
+    @include desktops {
+      @include font-size(70px);
+    }
+    @include tablets {
+      @include font-size(40px);
+    }
+  }
+}
+
+//CAROUSEL
+.carousel-indicators {
+  bottom: -40px;
+    li {
+      border: 1px solid $gsBlue;
+        &.active {
+          background: $gsBlue;
+        }
+    }
+}
+.carousel-control {
+    span {
+      position: absolute;
+      top: 50%;
+      @include font-size(50px);
+      margin-top: -20px;
+    }
+    &.left {
+      background: none;
+      span {
+        left: 5%;
+      }
+    }
+    &.right {
+      background: none;
+        span {
+          right: 5%;
+        }
+    }
+}
+
+
+
+
