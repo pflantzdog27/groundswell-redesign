@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img class="img-responsive" src="images/logo.svg" alt="Groundswell Logo"></a>
+            <a class="navbar-brand" href="index.php"><img class="img-responsive" src="images/logo.svg" alt="Groundswell Logo"></a>
         </div>
 
         <!-- Actual Links -->

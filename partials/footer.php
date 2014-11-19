@@ -1,14 +1,14 @@
 <footer id="footer">
     <div class="container">
         <div class="row">
-            <div class="col-sm-3" id="site-map">
+            <div class="col-sm-4" id="site-map">
                 <ul class="list-unstyled">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Who We Are</a></li>
                     <li><a href="#">What We Do</a></li>
                 </ul>
             </div>
-            <div class="col-sm-3" id="jump-buttons">
+            <div class="col-sm-4" id="jump-buttons">
                 <ul class="list-unstyled">
                     <li><a href="#">Start Your Campaign</a></li>
                     <li><a href="#">Book a Training</a></li>
@@ -16,7 +16,7 @@
                     <li><a href="#">Donate</a></li>
                 </ul>
             </div>
-            <div class="col-sm-6" id="contact-info">
+            <div class="col-sm-4" id="contact-info">
                 <h4>Contact Us</h4>
                 <ul class="list-unstyled">
                     <li><a href="#"><i class="icon-location"></i> 475 Riverside Drive, New York, NY 10015</a></li>

@@ -9,7 +9,7 @@
 @import 'sections';
 @import 'petitions';
 @import 'custom-scrollbar';
-@import 'blog-posts';
+@import 'blog';
 @import 'team';
 @import 'footer';
 
@@ -18,7 +18,7 @@
 body {
   font-size: 16px;
   font-family: $alphaCustomFont;
-  visibility: hidden;
+  //visibility: hidden;
 }
 
 a, button {
@@ -31,6 +31,11 @@ a, button {
 }
 p a {
   text-decoration: underline;
+}
+
+.blue-background {
+  background: $gsBlue;
+  padding: 3px;
 }
 
 strong {
@@ -80,9 +85,34 @@ button:active {
     }
 }
 
+.section-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
 // JUMBOTRON
 .page-header {
-  padding-top: 50px;
+  border-bottom: 0;
+  min-height: 200px;
+  @include flexbox;
+  @include flexAlignItems(center);
+    h1 {
+      padding: 0;
+      margin: 0;
+      line-height: 1;
+      text-transform: uppercase;
+      color: $gsBlue;
+      @include large-desktops {
+        @include font-size(70px);
+      }
+      @include desktops {
+        @include font-size(70px);
+      }
+      @include tablets {
+        @include font-size(40px);
+      }
+    }
 }
 .jumbotron {
   background: none;
@@ -102,6 +132,45 @@ button:active {
     @include tablets {
       @include font-size(40px);
     }
+  }
+}
+.social-link-bar, .social-link-column {
+  padding: 15px 0;
+    li {
+      display: inline-block;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-align: center;
+      @include transition(all 0.5s);
+        &.facebook a  {
+          background: #3b5998;
+        }
+        &.twitter a {
+          background: #4099FF;
+        }
+        &.email a {
+          background: #ccc;
+        }
+        a {
+          display: block;
+          padding: 8px 0;
+            &:hover {
+              color: #fff!important;
+            }
+        }
+      &:hover {
+        margin-top: -10px;
+      }
+    }
+}
+.social-link-column {
+  li {
+    display: block;
+    margin-bottom: 10px;
+      &:hover {
+        margin-top: 0;
+      }
   }
 }
 
@@ -135,6 +204,82 @@ button:active {
         }
     }
 }
+
+// SELECT MENU
+.select-menu {
+  position: relative;
+  z-index: 2;
+  margin-top: 4px;
+  margin-bottom: 15px;
+    .select-box {
+      border: 1px solid #eaeaea;
+      color: #333;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 0 10px;
+      line-height: 2;
+      position: relative;
+      cursor: pointer;
+      span {
+        color: $gsBlue;
+        border-left: 1px solid #eaeaea;
+        padding: 10px;
+        margin-left: 10px;
+      }
+      b {
+        color: $gsBlue;
+        position: absolute;
+        right: 5px;
+        top: 10px;
+      }
+    }
+    .select-options {
+      overflow: hidden;
+      max-height: 175px;
+      background:#fff;
+      display: none;
+      position: absolute;
+      left: 15px;
+      right: 15px;
+      top: 100%;
+      @include box-shadow(0px 1px 4px 4px, rgba(68,174,234,0.1));
+      li {
+        padding: 8px;
+        cursor: pointer;
+          &:last-child {
+            border-bottom: 0;
+          }
+        &:hover {
+          background: #eaeaea;
+        }
+      }
+    }
+}
+
+// SEARCH
+form {
+  width:100%;
+  margin-top: 4px;
+  .form-group {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border: 1px solid #eaeaea;
+    input {
+      padding-right: 50px;
+      @include border-radius(0);
+      text-transform: uppercase;
+      border: 0;
+    }
+    button {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+}
+
 
 
 

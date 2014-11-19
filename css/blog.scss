@@ -1,0 +1,82 @@
+//POSTS
+
+.blog-post {
+  margin-bottom: 25px;
+    article {
+      margin-top: 10px;
+        > figure {
+          height: 250px;
+          overflow: hidden;
+          position: relative;
+          margin-bottom: 15px;
+            figcaption {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              background: rgba(0,0,0,0.5);
+              color: #fff;
+              padding: 10px;
+            }
+        }
+        footer {
+          a {
+            text-decoration: underline;
+          }
+        }
+    }
+}
+#blog-video {
+  padding-bottom: 50px;
+    .blog-post-full {
+      margin-bottom: 40px;
+    }
+    .author-info {
+      figure {
+        margin: 0 15px;
+      }
+    }
+    footer {
+       margin-top: 20px;
+       strong {
+         color: $gsBlue;
+         text-transform: uppercase;
+       }
+     }
+}
+
+
+.author-info {
+  margin-bottom: 10px;
+    h5, h4 {
+      color: $gsBlue;
+      padding: 0;
+      margin: 0 0 0 10px;
+      font-weight: 300;
+    }
+    figure {
+      overflow: hidden;
+      margin: 0;
+      float: left;
+    }
+}
+
+//STRUCTURE
+.single-post-header {
+  padding: 75px 0 40px;
+    h1 {
+      color: $gsBlue;
+      font-weight: 700;
+    }
+}
+
+#right-sidebar {
+  padding: 90px 0 40px;
+    .sidebar-widget {
+      margin-bottom: 30px;
+        .widget-title {
+          color: $gsBlue;
+          font-weight: 300;
+        }
+    }
+}

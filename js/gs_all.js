@@ -49,7 +49,7 @@ GS.backgroundVideo = new function() {
             if (windowWidth < 768) {
                 aspectRatio = 4/6;
             } else {
-                aspectRatio = 4/9.7;
+                aspectRatio = 4/9.61;
             }
             var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
             myPlayer.width(width).height( width * aspectRatio );
@@ -77,7 +77,7 @@ GS.scrolloramaEffects = new function() {
             tweeningElement,
             (new TimelineLite())
                 .append([
-                    TweenMax.fromTo($('#primary-navigation-wrapper'), 1,
+                    TweenMax.fromTo($('#primary-navigation-wrapper'),.1,
                         {css: {'background-color': 'rgba(68,174,234,0)'}, immediateRender: true},
                         {css: {'background-color': 'rgba(68,174,234,1)'}})
                 ]),
@@ -99,9 +99,6 @@ GS.scrolloramaEffects = new function() {
                     TweenMax.fromTo($('#sub-intro-section'), .8,
                         {css: {'padding-top': 150, opacity: 0}, immediateRender: true},
                         {css: {'padding-top': 50, opacity: 1}}),
-                    TweenMax.fromTo($('#hero'), .5,
-                        {css: {background: 'rgba(68,174,234,0.6)'}, immediateRender: true},
-                        {css: {background: 'rgba(68,174,234,1)'}}),
                     TweenMax.fromTo($('#back-top'), 1,
                         {css: {opacity: 0}, immediateRender: true},
                         {css: {opacity: 1}})
@@ -116,45 +113,19 @@ GS.scrolloramaEffects = new function() {
             (new TimelineLite())
                 .append([
                     TweenMax.fromTo($('.icon-comment'), 1,
-                        {css: {top: 30}, immediateRender: true},
-                        {css: {top: -30}})
+                        {css: {top: -15}, immediateRender: true},
+                        {css: {top: -60}})
                 ]),
             heightOfTweeningElement);
     };
 
-    this.blog = function() {
-        var heightOfTweeningElement = $('#blog').innerHeight();
+    this.parallax = function(tweeningElement) {
+        var heightOfTweeningElement = $(tweeningElement).innerHeight();
         controller.addTween(
-            '#blog',
+        tweeningElement,
             (new TimelineLite())
                 .append([
-                    TweenMax.fromTo($('#blog .parallax'), .1 ,
-                        {css:{top: 0 }, immediateRender:true},
-                        {css:{top: -100}})
-                ]),
-            heightOfTweeningElement);
-    };
-
-    this.team = function() {
-        var heightOfTweeningElement = $('#team').innerHeight();
-        controller.addTween(
-            '#team',
-            (new TimelineLite())
-                .append([
-                    TweenMax.fromTo($('#team .parallax'), .1 ,
-                        {css:{top: 0 }, immediateRender:true},
-                        {css:{top: -100}})
-                ]),
-            heightOfTweeningElement);
-    };
-
-    this.partners = function() {
-        var heightOfTweeningElement = $('#partners').innerHeight();
-        controller.addTween(
-            '#partners',
-            (new TimelineLite())
-                .append([
-                    TweenMax.fromTo($('#partners .parallax'), .1 ,
+                    TweenMax.fromTo($(tweeningElement+ ' .parallax'), .1 ,
                         {css:{top: 0 }, immediateRender:true},
                         {css:{top: -100}})
                 ]),
@@ -176,6 +147,22 @@ GS.scrolloramaEffects = new function() {
                 ]),
             heightOfTweeningElement);
     };
+
+    this.blog_single_video = function(section) {
+        controller.addTween(
+            section,
+            (new TimelineLite())
+                .append([
+                    TweenMax.fromTo($('.social-link-bar ul li'),.1,
+                        {css: {'padding-left': 15, 'padding-right': 15 }, immediateRender: true},
+                        {css: {'padding-left': 0, 'padding-right': 0}}),
+                    TweenMax.fromTo($('.social-link-bar ul li a'),.1,
+                        {css: {'padding-top': 8, 'padding-bottom': 8 }, immediateRender: true},
+                        {css: {'padding-top': 15, 'padding-bottom': 15}})
+                ]),
+            100, false);
+    }
+
 
 };
 
@@ -212,7 +199,7 @@ GS.petitions = new function() {
                 }
             });
         })
-        .done(function () {
+            .done(function () {
                 if($('.mCSB_container').length > 0) {
                     petitions.find('.item').hide();
                     petitions.find('.mCSB_container').prepend(Mustache.render(galleryTemplate, petitionList));
@@ -224,17 +211,34 @@ GS.petitions = new function() {
                 $('#loading-image').fadeOut(300,function() {
                     $(this).remove();
                 })
-        })
-        // error handling here
-        .fail(function () {
-            console.log("Error");
-        });
+            })
+            // error handling here
+            .fail(function () {
+                console.log("Error");
+            });
     };
     this.scrollBar = function() {
-        petitions.mCustomScrollbar( {
+        $('.scroll-area').mCustomScrollbar( {
             theme:"dark"
         });
     };
+    this.slideToggleCats = function() {
+        $('#petition-wrap').on('click','#cat-selector', function() {
+            $('#cat-list').slideToggle(300);
+            catSelectorButton.find('b').toggleClass('icon-arrow-down, icon-arrow-up');
+        });
+    };
+    this.selectCategory = function() {
+        $('#petition-wrap').on('click','#cat-list li', function() {
+            catSelectorButton.find('b').toggleClass('icon-arrow-down, icon-arrow-up');
+            catSelectorButton.find('span').text($(this).text());
+            $('#cat-list').slideToggle(300);
+            categorySlug = $(this).attr('data-value');
+            $('<div></div>').attr('id','loading-image').appendTo(petitionWrapperID);
+            GS.petitions.petitionsGenerator();
+        });
+    }
+
 };
 
 GS.sectionHacks = new function() {
@@ -245,25 +249,42 @@ GS.sectionHacks = new function() {
         var offset = 150;
         $(window).scroll(function() {
             if ($(window).scrollTop() >= distance - offset) {
-                $('#primary-navigation-wrapper').css('box-shadow', '0px 5px 8px 0px rgba(0,0,0,0.7)');
+                $('#primary-navigation-wrapper').css('box-shadow', '0px 1px 8px 0px rgba(0, 0, 0, 0.6)');
             } else {
                 $('#primary-navigation-wrapper').css('box-shadow', 'none');
             }
         });
-
-
     }
 };
 
+GS.blog = new function() {
+
+    this.selectMenu = function() {
+        $('.select-box').click(function() {
+            $('.select-options').slideToggle(300);
+            $(this).find('b').toggleClass('icon-arrow-down, icon-arrow-up');
+        })
+
+        $('.select-options li').click(function() {
+            var cat = $(this).text();
+            $('.select-box').find('b').toggleClass('icon-arrow-down, icon-arrow-up');
+            $('.select-options').slideToggle(300);
+            $('.select-box span').text(cat);
+        })
+    }
+
+};
 
 $(function() {
+
     var bodyClass = $('body').attr('class');
+
     GS.navigation.searchDisplay();
     GS.navigation.backToTop();
-    if(bodyClass == 'home') {
+
+    if(bodyClass == 'home') { // JUST THE HOME
         GS.navigation.navigateDown();
         GS.backgroundVideo.sizingFunction();
-        GS.petitions.petitionsGenerator();
 
         //scrollorama
         GS.scrolloramaEffects.mainNavBackground();
@@ -271,19 +292,38 @@ $(function() {
         GS.scrolloramaEffects.steps('#action');
         GS.scrolloramaEffects.steps('#training');
         GS.scrolloramaEffects.steps('#inspiration');
-        GS.scrolloramaEffects.blog();
+        GS.scrolloramaEffects.parallax('#blog');
+        GS.scrolloramaEffects.parallax('#team');
+        GS.scrolloramaEffects.parallax('#partners');
         GS.scrolloramaEffects.trainings();
-        GS.scrolloramaEffects.partners();
 
         //section hacks
         GS.sectionHacks.firstSection();
     }
 
+    if(bodyClass == 'blog-index') { // JUST BLOG INDEX
+        GS.blog.selectMenu();
+        GS.scrolloramaEffects.parallax('#blog');
+        GS.scrolloramaEffects.parallax('#petition-wrap');
+    }
+
+    if(bodyClass == 'blog-single-video' || bodyClass == 'blog-two-columns') { // BLOG VIDEO PAGE BOTH LAYOUTS
+        GS.scrolloramaEffects.blog_single_video('.blog-single-video');
+        GS.scrolloramaEffects.blog_single_video('.blog-two-columns');
+        GS.blog.selectMenu();
+    }
+
+    if(bodyClass == 'blog-index' || bodyClass == 'home') { // BLOG AND HOME
+        GS.petitions.slideToggleCats();
+        GS.petitions.selectCategory();
+    }
+    GS.petitions.petitionsGenerator();
+
 
     //move this
     $(window).load(function(){
         GS.petitions.scrollBar();
-        $('body').css('visibility', 'visible')
+        //$('body').css('visibility', 'visible')
     });
 
 

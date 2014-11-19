@@ -15,7 +15,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background: none;
+    background: rgba(68,174,234,0.2);
     .container {
       @include flexbox;
       @include flexdirection(row);
@@ -49,4 +49,5 @@
   @include font-size(30px);
   @include box-shadow(0 3px 8px -8px, black);
   position: relative;
+  @include font-size(35px);
 }
