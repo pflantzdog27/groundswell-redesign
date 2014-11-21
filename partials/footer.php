@@ -27,17 +27,15 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <div id="copyright">
-        <div class="container">
-            <p>&copy;2014 <a href="#">Auburn</a>, Groundswell</p>
+        <div id="copyright">
+            <p>&copy;2014 Groundswell, powered by <a href="#">Auburn</a></p>
         </div>
     </div>
 </footer>
 
-<aside id="back-top">
+<span id="back-top">
     <i class="icon-arrow-up"></i>
-</aside>
+</span>
 
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

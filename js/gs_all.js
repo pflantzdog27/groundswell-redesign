@@ -22,7 +22,7 @@ GS.navigation = new function(){
         $("#get-started").click(function() {
             var scrollHere = parseInt($("#sub-intro-section").offset().top);
             $('html, body').animate({
-                scrollTop: scrollHere - 30
+                scrollTop: scrollHere - 0
             }, 600);
         });
     };
@@ -49,7 +49,7 @@ GS.backgroundVideo = new function() {
             if (windowWidth < 768) {
                 aspectRatio = 4/6;
             } else {
-                aspectRatio = 4/9.61;
+                aspectRatio = 4/9.4;
             }
             var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
             myPlayer.width(width).height( width * aspectRatio );
@@ -60,6 +60,27 @@ GS.backgroundVideo = new function() {
                 myPlayer.width(width).height( width * aspectRatio );
             }
             window.onresize = resizeVideoJS;
+
+            // when video finishes
+            this.addEvent("ended", function(){
+                myPlayer.pause();
+                $('#playback-control').removeClass('icon-pause').addClass('icon-play');
+                isPlaying = false;
+            });
+
+            //pause/pause video
+            var isPlaying = !myPlayer.paused();
+            $('#playback-control').click(function() {
+                if(isPlaying == true) {
+                    myPlayer.pause();
+                    $(this).removeClass('icon-pause').addClass('icon-play');
+                    isPlaying = false;
+                } else {
+                    myPlayer.play();
+                    $(this).removeClass('icon-play').addClass('icon-pause');
+                    isPlaying = true;
+                }
+            })
         });
     }
 };
@@ -96,9 +117,9 @@ GS.scrolloramaEffects = new function() {
                     TweenMax.fromTo($('#get-started'), 1,
                         {css: {bottom: 0}, immediateRender: true},
                         {css: {bottom: -100}}),
-                    TweenMax.fromTo($('#sub-intro-section'), .8,
-                        {css: {'padding-top': 150, opacity: 0}, immediateRender: true},
-                        {css: {'padding-top': 50, opacity: 1}}),
+                    TweenMax.fromTo($('#sub-intro-section'), 1,
+                        {css: {'padding-top': 200}, immediateRender: true},
+                        {css: {'padding-top': 70}}),
                     TweenMax.fromTo($('#back-top'), 1,
                         {css: {opacity: 0}, immediateRender: true},
                         {css: {opacity: 1}})
@@ -239,6 +260,13 @@ GS.petitions = new function() {
         });
     }
 
+    this.modalWindow = function() {
+        $('#petition-wrap').on('click','.sign-init', function() {
+            var action = $(this).next('a').attr('href');
+            $('#petition-form').find('form').attr('action',action+'/signatures');
+        })
+    }
+
 };
 
 GS.sectionHacks = new function() {
@@ -318,6 +346,7 @@ $(function() {
         GS.petitions.selectCategory();
     }
     GS.petitions.petitionsGenerator();
+    GS.petitions.modalWindow();
 
 
     //move this
@@ -325,8 +354,6 @@ $(function() {
         GS.petitions.scrollBar();
         //$('body').css('visibility', 'visible')
     });
-
-
 
 
 });

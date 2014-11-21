@@ -10,12 +10,12 @@
                     "controls" : false,
                     "autoplay" : true,
                     "preload" : "auto",
-                    "poster": "myPoster.jpg",
+                    "poster": "images/training-bg.jpg",
                     "muted" : true
                 }'>
-            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
-            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
-            <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+            <!--<source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />-->
+            <source src="video/homepageBanner.mp4" type='video/mp4' />
+            <!--<source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' /> -->
             <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
         </video>
 
@@ -26,6 +26,7 @@
                     <h1>Inspiring<br> Faithful Action<br> to Heal and<br> Repair the World</h1>
                 </div>
             </div>
+            <span id="playback-control" class="icon-pause"></span>
         </div>
 
         <!-- get started button -->
@@ -40,7 +41,7 @@
                 </div>
                 <div class="col-sm-3">
                     <p class="text-center">Powered By</p>
-                    <img src="images/auburn.png" class="img-responsive" alt="Auburn Logo">
+                    <img src="images/auburn.svg" class="img-responsive" alt="Auburn Logo">
                 </div>
             </div>
         </div>

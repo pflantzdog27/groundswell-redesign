@@ -33,6 +33,10 @@ p a {
   text-decoration: underline;
 }
 
+p {
+  @include font-size(35px);
+}
+
 .blue-background {
   background: $gsBlue;
   padding: 3px;
