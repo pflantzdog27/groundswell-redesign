@@ -45,6 +45,7 @@
     <script src="js/moment.min.js"></script>
     <script src="js/jquery.mCustumScrollbar.3.0.5.min.js"></script>
     <script src="js/mustache.js"></script>
+    <script src="js/jquery.counter.js"></script>
     <script src="js/gs_all.js"></script>
 
 

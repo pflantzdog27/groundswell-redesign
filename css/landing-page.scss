@@ -1,0 +1,108 @@
+.first-level-intro {
+  @include coverBG;
+    #hero {
+      background: rgba(0,0,0,0.4);
+      .container {
+        @include flexbox;
+        @include flexdirection(row);
+        @include flexAlignItems(center);
+        min-height: 500px;
+        hgroup {
+          h1 {
+            color: #fff;
+          }
+          h2 {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+}
+#landing-page-content {
+  padding: 50px 0 75px;
+    header {
+      color: $gsBlue;
+      text-transform: uppercase;
+      padding-top: 30px;
+      padding-bottom: 15px;
+    }
+    #feature-block {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+}
+
+#stats {
+  position: relative;
+  min-height: 275px;
+    .connecting-line {
+     //@include rotate(-45deg);
+      border-top: 10px solid $gsBlue;
+      width: 50px;
+      height: 50px;
+      display: block;
+      position: absolute;
+      top: 60%;
+      z-index: -1;
+    }
+    .circle {
+      width: 75px;
+      height: 75px;
+      margin: 0 auto;
+      background: $gsBlue;
+      @include border-radius(50px);
+      position: relative;
+      @extend %flexboxAlignmentSet;
+      abbr {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        color: #fff;
+        text-align: center;
+        font-weight: 300;
+      }
+    }
+    li {
+      position: absolute;
+      top: 50%;
+      left: 230px;
+      margin-left: -20px;
+      margin-top: -20px;
+        &:first-child {
+          left: 65px;
+          margin-left: 0;
+        }
+        &:last-child {
+          left: 365px;
+          margin-left: 0;
+        }
+        h4 {
+          color: #fff;
+          clear: both;
+          position: absolute;
+          bottom: 10px;
+          left: 0;
+          right: 0;
+          text-align: center;
+        }
+    }
+}
+
+#submit-articles {
+  background: rgba(0,0,0,0.2);
+  padding: 40px 0;
+    h2 {
+      color: $gsBlue;
+    }
+    p {
+      color: #333;
+    }
+}
+
+#get-updates {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+

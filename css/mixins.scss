@@ -183,5 +183,25 @@
   flex-grow: $int;
 }
 
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+  -moz-transform: rotate($degrees);
+  -ms-transform: rotate($degrees);
+  -o-transform: rotate($degrees);
+  transform: rotate($degrees);
+
+}
+
+/* --------------------
+Extenders
+--------------------------*/
+%flexboxAlignmentSet {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+  @include flexAlignItems(center);
+  flex-wrap: wrap;
+  @include justifyContent(center);
+}
 
 

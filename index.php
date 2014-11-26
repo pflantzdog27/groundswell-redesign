@@ -12,19 +12,27 @@
             <tbody>
             <tr>
                 <td><a href="homepage.php">Homepage</a></td>
-                <td style="color: red;">Feedback Received from GS team.</td>
+                <td><span style="color: red;">Updates</span>. Yet to receive feedback from GS team</td>
             </tr>
             <tr>
                 <td><a href="blog-index.php">Blog Index</a></td>
-                <td>Yet to be reviewed by GS</td>
+                <td>Yet to receive feedback from GS team</td>
             </tr>
             <tr>
                 <td><a href="blog-single-video.php">Blog Single Post (Video)</a></td>
-                <td>Yet to be reviewed by GS</td>
+                <td>Yet to receive feedback from GS team</td>
             </tr>
             <tr>
                 <td><a href="blog-two-columns.php">Blog Single Post (Two Columns)</a></td>
-                <td>Yet to be reviewed by GS</td>
+                <td>Yet to receive feedback from GS team</td>
+            </tr>
+            <tr>
+                <td><a href="blog-curator.php">Blog Curator</a></td>
+                <td>Yet to receive feedback from GS team</td>
+            </tr>
+            <tr>
+                <td><a href="inspiration.php">Inspiration</a></td>
+                <td>Yet to receive feedback from GS team</td>
             </tr>
             </tbody>
         </table>

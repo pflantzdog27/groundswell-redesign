@@ -15,27 +15,27 @@
     left: 0;
     right: 0;
     background: rgba(68,174,234,0.4);
-    .container {
-      @include flexbox;
-      @include flexdirection(row);
-      @include flexAlignItems(center);
+      .container {
+        @include flexbox;
+        @include flexdirection(row);
+        @include flexAlignItems(center);
         h1 {
           text-shadow: 0px 2px 9px rgba(0, 0, 0, 0.3);
           color: #fff;
         }
-    }
-    #playback-control {
-      position: absolute;
-      bottom: 50px;
-      right: 50px;
-      color: rgba(255,255,255,0.3);
-      @include font-size(70px);
-      cursor: pointer;
-      @include transition(all 0.5s);
-        &:hover {
-          color: rgba(255,255,255,1);
+        #playback-control {
+          position: absolute;
+          bottom: 50px;
+          right: 50px;
+          color: rgba(255, 255, 255, 0.3);
+          @include font-size(70px);
+          cursor: pointer;
+          @include transition(all 0.5s);
+          &:hover {
+            color: rgba(255, 255, 255, 1);
+          }
         }
-    }
+      }
   }
   #get-started {
     position: absolute;
@@ -55,6 +55,7 @@
 #sub-intro-section {
   background: $gsBlue;
   padding-bottom: 50px;
+  padding-top: 50px;
   color: #fff;
   @include box-shadow(0 3px 8px -8px, black);
   position: relative;

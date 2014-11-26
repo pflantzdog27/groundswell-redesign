@@ -1,6 +1,6 @@
 .content-section {
   padding-top: 130px;
-  padding-bottom: 100px;
+  padding-bottom: 250px;
   position: relative;
   overflow: hidden;
   @include box-shadow(inset 0px 1px 8px 0px, rgba(0, 0, 0, 0.6));
@@ -13,6 +13,9 @@
       color: rgba(0,0,0,0.2);
       font-family: $numberCustomFont;
       line-height: .6;
+        span {
+          padding-right: 15px;
+        }
     }
     .section-template {
         .section-left-column, .section-right-column {

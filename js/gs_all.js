@@ -184,6 +184,59 @@ GS.scrolloramaEffects = new function() {
             100, false);
     }
 
+    this.stats = function(section) {
+        var counterShares;
+        var counterViews;
+        var counterHours;
+        controller.addTween(
+            section,
+            (new TimelineLite())
+                .append([
+                    TweenMax.fromTo($(section+ ' li:eq(0)'),.1,
+                        {css: { top : '50%' }, immediateRender: true},
+                        {css: { top: '50%' },onComplete: function(){
+                            if(counterViews != 'complete') {
+                                GS.landingPages.statCounter('page-views')
+                            }
+                            counterViews = 'complete';
+                        }}),
+                    TweenMax.fromTo($(section+ ' li:eq(1)'),.3,
+                        {css: { top : '50%' }, immediateRender: true},
+                        {css: { top: '80%'},onComplete: function(){
+                            if(counterShares != 'complete') {
+                                GS.landingPages.statCounter('shares')
+                            }
+                            counterShares = 'complete';
+                        }}),
+                    TweenMax.fromTo($(section+ ' li:eq(2)'),.1,
+                        {css: { top : '50%' }, immediateRender: true},
+                        {css: { top: '50%' },onComplete: function(){
+                            if(counterHours != 'complete') {
+                                GS.landingPages.statCounter('hours')
+                            }
+                            counterHours = 'complete';
+                        }}),
+
+                    TweenMax.fromTo($('.circle'),.5,
+                        {css: {'font-size': 20 }, immediateRender: true},
+                        {css: {'font-size': 45, width: 100, height: 100, 'border-radius' : 50, 'margin-top': -50}}),
+                    TweenMax.fromTo($('.circle:eq(0), .circle:eq(1)'),.5,
+                        {css: {'background': 'rgb(68,174,234)' }, immediateRender: true},
+                        {css: {'background': 'rgb(234,90,58)'}}),
+
+                    TweenMax.fromTo($('.circle abbr'),.5,
+                        {css: {'margin-top': -25 }, immediateRender: true},
+                        {css: {'margin-top': -45}}),
+                    TweenMax.fromTo($('.connecting-line:eq(0)'),.3,
+                        {css: {rotation: 0, 'border-color': 'rgb(68,174,234)' }, immediateRender: true},
+                        {css: {rotation: 20, width: 100, left: 130, 'border-color': 'rgb(234,90,58)'}}),
+                    TweenMax.fromTo($('.connecting-line:eq(1)'),.3,
+                        {css: {rotation: 0 }, immediateRender: true},
+                        {css: {rotation: -20, left: 300, width: 100}})
+                ]),
+            100, false);
+    }
+
 
 };
 
@@ -303,6 +356,21 @@ GS.blog = new function() {
 
 };
 
+GS.landingPages = new function() {
+    this.statCounter = function(element) {
+        var endAt = $('#'+element).parent('abbr').parent('.circle').attr('data-count');
+        $('#'+element).countTo({
+            from: 0,
+            to: endAt,
+            speed: 2000,
+            refreshInterval: 300,
+            onComplete: function(value) {
+                //
+            }
+        });
+    }
+};
+
 $(function() {
 
     var bodyClass = $('body').attr('class');
@@ -329,6 +397,10 @@ $(function() {
         GS.sectionHacks.firstSection();
     }
 
+    if(bodyClass == 'inspiration') { // JUST BLOG INDEX
+        GS.scrolloramaEffects.stats('#landing-page-content');
+    }
+
     if(bodyClass == 'blog-index') { // JUST BLOG INDEX
         GS.blog.selectMenu();
         GS.scrolloramaEffects.parallax('#blog');
@@ -345,6 +417,8 @@ $(function() {
         GS.petitions.slideToggleCats();
         GS.petitions.selectCategory();
     }
+
+
     GS.petitions.petitionsGenerator();
     GS.petitions.modalWindow();
 

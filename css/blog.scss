@@ -9,6 +9,10 @@
           overflow: hidden;
           position: relative;
           margin-bottom: 15px;
+          background: #eaeaea;
+            img {
+              margin: 0 auto;
+            }
             figcaption {
               position: absolute;
               bottom: 0;
@@ -77,6 +81,21 @@
         .widget-title {
           color: $gsBlue;
           font-weight: 300;
+        }
+    }
+}
+
+#curator-info-block {
+  color: $gsBlue;
+  min-height: 200px;
+    figure {
+      position: relative;
+      height: 200px;
+      display: block;
+        img {
+          position: absolute;
+          bottom: 0;
+          max-height: 200px;
         }
     }
 }
