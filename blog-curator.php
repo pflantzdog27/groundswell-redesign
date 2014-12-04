@@ -7,8 +7,10 @@
         <div class="row">
             <div class="col-sm-9">
                 <h1>Curator:<b>Esther Mere&#324;o</b></h1>
-                <a href="#"><i class="icon-mail"></i>Email</a>
-                <a href="#"><i class="icon-twitter"></i>Twitter</a>
+                <div class="contact-curator">
+                    <a href="#"><i class="icon-mail"></i>Email</a>
+                    <a href="#"><i class="icon-twitter"></i>Twitter</a>
+                </div>
                 <p>Esther Mere&#324;o (pronounced Astaire, like Fred), doesn't really care how you pronounce her name, but she does care about using art, humor, and love to make the good ol' U.S.A. a better place for everybody to live in.</p>
             </div>
             <div class="col-sm-3" id="curator-info-block">

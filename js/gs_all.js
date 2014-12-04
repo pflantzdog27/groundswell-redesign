@@ -36,6 +36,19 @@ GS.navigation = new function(){
         });
     };
 
+    this.navigationBoxShadow = function() {
+        $('#primary-navigation-wrapper').css('box-shadow', 'none');
+        var distance = $('.content-section').eq(0).offset().top;
+        var offset = 75;
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= distance - offset) {
+                $('#primary-navigation-wrapper').css('box-shadow', '0px 1px 8px 0px rgba(0, 0, 0, 0.6)');
+            } else {
+                $('#primary-navigation-wrapper').css('box-shadow', 'none');
+            }
+        });
+    }
+
 };
 
 GS.backgroundVideo = new function() {
@@ -118,7 +131,7 @@ GS.scrolloramaEffects = new function() {
                         {css: {bottom: 0}, immediateRender: true},
                         {css: {bottom: -100}}),
                     TweenMax.fromTo($('#sub-intro-section'), 1,
-                        {css: {'padding-top': 200}, immediateRender: true},
+                        {css: {'padding-top': 100}, immediateRender: true},
                         {css: {'padding-top': 70}}),
                     TweenMax.fromTo($('#back-top'), 1,
                         {css: {opacity: 0}, immediateRender: true},
@@ -134,8 +147,8 @@ GS.scrolloramaEffects = new function() {
             (new TimelineLite())
                 .append([
                     TweenMax.fromTo($('.icon-comment'), 1,
-                        {css: {top: -15}, immediateRender: true},
-                        {css: {top: -60}})
+                        {css: {top: 30}, immediateRender: true},
+                        {css: {top: -45}})
                 ]),
             heightOfTweeningElement);
     };
@@ -235,6 +248,20 @@ GS.scrolloramaEffects = new function() {
                         {css: {rotation: -20, left: 300, width: 100}})
                 ]),
             100, false);
+    };
+    this.columnSections = function() {
+        controller.addTween(
+            '#sub-intro-section',
+            (new TimelineLite())
+                .append([
+                    TweenMax.fromTo($('#column-buckets article header'), 1,
+                        {css: {'margin-top': 20 }, immediateRender: true},
+                        {css: {'margin-top': 0}}),
+                    TweenMax.fromTo($('#column-buckets article header h2'),.5,
+                        {css: {'font-weight': 300 }, immediateRender: true},
+                        {css: {'font-weight': 700}})
+                ]),
+            100, false);
     }
 
 
@@ -323,17 +350,16 @@ GS.petitions = new function() {
 };
 
 GS.sectionHacks = new function() {
+    this.evenLengthColumns = function() {
+        var bigbrother = -1;
+        var columnBuckets = $('#column-buckets article');
 
-    this.firstSection = function() {
-        $('#primary-navigation-wrapper').css('box-shadow', 'none');
-        var distance = $('.content-section').eq(0).offset().top;
-        var offset = 150;
-        $(window).scroll(function() {
-            if ($(window).scrollTop() >= distance - offset) {
-                $('#primary-navigation-wrapper').css('box-shadow', '0px 1px 8px 0px rgba(0, 0, 0, 0.6)');
-            } else {
-                $('#primary-navigation-wrapper').css('box-shadow', 'none');
-            }
+        columnBuckets.each(function () {
+            bigbrother = bigbrother > columnBuckets.height() ? bigbrother : columnBuckets.height();
+        });
+
+        columnBuckets.each(function () {
+            columnBuckets.height(bigbrother + 50);
         });
     }
 };
@@ -371,6 +397,25 @@ GS.landingPages = new function() {
     }
 };
 
+GS.carousel = new function() {
+    this.carouselInit = function() {
+        // init carousel
+        var theCarousel = $('#full-width-slider');
+        theCarousel.carousel({
+            interval: false,
+            wrap: false
+        });
+    };
+
+    this.toggleTextDisplay = function() {
+        $('#toggle-display').click(function() {
+            $('.text-overlay').slideToggle(300);
+            $('#toggle-display').find('i').toggleClass('icon-minus, icon-plus');
+        })
+    }
+
+};
+
 $(function() {
 
     var bodyClass = $('body').attr('class');
@@ -393,12 +438,26 @@ $(function() {
         GS.scrolloramaEffects.parallax('#partners');
         GS.scrolloramaEffects.trainings();
 
-        //section hacks
-        GS.sectionHacks.firstSection();
+        //navigation
+        GS.navigation.navigationBoxShadow();
     }
 
-    if(bodyClass == 'inspiration') { // JUST BLOG INDEX
+    if(bodyClass == 'inspiration') { // INSPIRATION
         GS.scrolloramaEffects.stats('#landing-page-content');
+        GS.scrolloramaEffects.mainNavBackground();
+        GS.navigation.navigationBoxShadow();
+    }
+
+    if(bodyClass == 'what-we-do') { // WHAT WE DO
+        GS.scrolloramaEffects.mainNavBackground();
+        GS.navigation.navigationBoxShadow();
+        if ($(window).width() > 768) {
+            GS.sectionHacks.evenLengthColumns();
+        }
+        GS.scrolloramaEffects.parallax('#slider-wrapper');
+        GS.scrolloramaEffects.columnSections();
+        GS.carousel.carouselInit();
+        GS.carousel.toggleTextDisplay();
     }
 
     if(bodyClass == 'blog-index') { // JUST BLOG INDEX
@@ -428,6 +487,25 @@ $(function() {
         GS.petitions.scrollBar();
         //$('body').css('visibility', 'visible')
     });
+
+    $('#team-graphic li').click(function() {
+        var hiddenHtml = $(this).find('.hidden').html();
+        $('#team-graphic li h4').css({color : '#44aeea', 'font-size': '1.1em'});
+        $(this).find('h4').css({color : '#333', 'font-size': '1.2em'});
+        if($('#team-member-bio').length <= 0) {
+            $('#team-member-bio').html(hiddenHtml).slideDown(300);
+        } else {
+            $('#team-member-bio').html(hiddenHtml);
+        }
+    });
+
+    $('#team-graphic li').hover(function() {
+        $(this).find('h4').stop().css({'border-top' : '5px solid #ea5a3a'});
+        $(this).find('img').stop().animate({opacity : 1},400);
+    },function() {
+        $(this).find('h4').stop().css({'border-top' : '5px solid #44aeea'});
+        $(this).find('img').stop().animate({opacity : 0.7},400);
+    })
 
 
 });

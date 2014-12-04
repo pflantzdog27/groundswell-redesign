@@ -6,7 +6,7 @@
         @include flexbox;
         @include flexdirection(row);
         @include flexAlignItems(center);
-        min-height: 500px;
+        min-height: 400px;
         hgroup {
           h1 {
             color: #fff;
@@ -20,16 +20,20 @@
 }
 #landing-page-content {
   padding: 50px 0 75px;
-    header {
-      color: $gsBlue;
-      text-transform: uppercase;
-      padding-top: 30px;
-      padding-bottom: 15px;
-    }
     #feature-block {
       padding-top: 50px;
       padding-bottom: 50px;
     }
+}
+.content-title {
+  color: $gsBlue;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#slider-wrapper {
+  padding-top: 20px;
+  padding-bottom: 0;
 }
 
 #stats {
@@ -53,6 +57,7 @@
       @include border-radius(50px);
       position: relative;
       @extend %flexboxAlignmentSet;
+      @include box-shadow(0 6px 3px -3px , rgba(0,0,0,0.5));
       abbr {
         display: block;
         position: absolute;
@@ -104,5 +109,43 @@
 #get-updates {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+#column-buckets {
+  article {
+    border-right: 2px solid $gsOrange;
+    padding-bottom: 60px;
+    position: relative;
+    header {
+      background: $gsOrange;
+      margin-top: 20px;
+      h2 {
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 300;
+      }
+    }
+    .bucket-content {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    footer {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      button {
+        width: 80%;
+      }
+    }
+    &:last-child {
+      border-right: 0;
+    }
+  }
 }
 

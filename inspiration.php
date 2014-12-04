@@ -3,7 +3,7 @@
 <body class="inspiration">
 <?php include_once('partials/primary-navigation.php'); ?>
 
-<header class="first-level-intro" style="background-image: url(images/INSPIREcollage.png)">
+<header class="first-level-intro" style="background-image: url(images/inspiration.jpg)">
     <div id="hero">
         <div class="container">
             <div class="jumbotron col-sm-12">
@@ -26,7 +26,7 @@
 </div>
 <section id="landing-page-content" class="content-section">
     <div class="container">
-        <header>
+        <header class="content-title">
             <h2>Here's a story of what we did with one video</h2>
         </header>
         <div class="content-wrapper">

@@ -1,7 +1,7 @@
 <?php include('partials/header.php');?>
     <body>
     <div class="container">
-        <h4>Last Updated: <strong>11/21</strong></h4>
+        <h4>Last Updated: <strong>Wednesday, 12/3</strong></h4>
         <table class="table table-striped">
             <thead>
             <tr>
@@ -32,6 +32,10 @@
             </tr>
             <tr>
                 <td><a href="inspiration.php">Inspiration</a></td>
+                <td>Yet to receive feedback from GS team</td>
+            </tr>
+            <tr>
+                <td><a href="what-we-do.php">What we do</a></td>
                 <td>Yet to receive feedback from GS team</td>
             </tr>
             </tbody>

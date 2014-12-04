@@ -7,15 +7,32 @@
       @include desktops {
         max-width: 33.33%;
       }
-      hgroup {
-        border-top: 5px solid $gsBlue;
+      header {
         text-align: center;
+        cursor: pointer;
+          img {
+            opacity: 0.7;
+          }
           h4 {
             font-weight: 700;
-          }
-          h5 {
-            font-weight: 300;
+            border-top: 5px solid $gsBlue;
+            margin: 0;
+            padding-top: 10px;
           }
       }
   }
+}
+
+#team-member-bio {
+  color: #333;
+    footer {
+      text-transform: uppercase;
+      color: #888;
+      font-weight: 700;
+      a {
+        padding-left: 5px;
+        padding-right: 5px;
+        text-decoration: none;
+      }
+    }
 }
