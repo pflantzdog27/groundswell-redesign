@@ -19,11 +19,12 @@
             <div class="col-sm-4" id="contact-info">
                 <h4>Contact Us</h4>
                 <ul class="list-unstyled">
-                    <li><a href="#"><i class="icon-location"></i> 475 Riverside Drive, New York, NY 10015</a></li>
-                    <li><a href="#"><i class="icon-phone"></i> 212.662.4315</a></li>
-                    <li><a href="#"><i class="icon-mail"></i>info@Groundswell-Movement.org</a></li>
-                    <li><a href="#"><i class="icon-facebook"></i>fb.com/GroundswellMovement</a></li>
-                    <li><a href="#"><i class="icon-twitter"></i>@GroundswellMvmt</a></li>
+                    <li><a href="https://www.google.com/maps/place/475+Riverside+Dr,+Columbia+University,+New+York,+NY+10027/@40.8110082,-73.9639807,17z/data=!3m1!4b1!4m2!3m1!1s0x89c2f63f42f03e5b:0xf9f4c2eab6281ece" target="_blank"><i
+                                class="icon-location"></i> 475 Riverside Drive, New York, NY 10015</a></li>
+                    <li><a href="tel:2126624315"><i class="icon-phone"></i> 212.662.4315</a></li>
+                    <li><a href="mailto:info@groundswell-movement.org"><i class="icon-mail"></i>info@Groundswell-Movement.org</a></li>
+                    <li><a href="http://facebook.com/groundswellmovement" target="_blank"><i class="icon-facebook"></i>fb.com/GroundswellMovement</a></li>
+                    <li><a href="http://twitter.com/groundswellmvmt" target="_blank"><i class="icon-twitter"></i>@GroundswellMvmt</a></li>
                 </ul>
             </div>
         </div>

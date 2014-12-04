@@ -491,7 +491,10 @@ $(function() {
     $('#team-graphic li').click(function() {
         var hiddenHtml = $(this).find('.hidden').html();
         $('#team-graphic li h4').css({color : '#44aeea', 'font-size': '1.1em'});
+        $('#team-graphic li').removeClass('active');
         $(this).find('h4').css({color : '#333', 'font-size': '1.2em'});
+        $(this).addClass('active');
+
         if($('#team-member-bio').length <= 0) {
             $('#team-member-bio').html(hiddenHtml).slideDown(300);
         } else {

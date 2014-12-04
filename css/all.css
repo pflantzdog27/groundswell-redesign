@@ -2507,11 +2507,18 @@ div.vjs-loading-spinner .ball8 {
     cursor: pointer; }
     #team-graphic li header img {
       opacity: 0.7; }
+      #team-graphic li header img:hover {
+        opacity: 1; }
     #team-graphic li header h4 {
       font-weight: 700;
       border-top: 5px solid #44aeea;
       margin: 0;
       padding-top: 10px; }
+
+.active h4 {
+  border-top: 5px solid #ea5a3a !important; }
+.active img {
+  opacity: 1 !important; }
 
 #team-member-bio {
   color: #333; }
