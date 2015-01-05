@@ -204,4 +204,30 @@ Extenders
   @include justifyContent(center);
 }
 
+%imageBgH1 {
+  font-weight: 300;
+  @include large-desktops {
+    @include font-size(70px);
+  }
+  @include desktops {
+    @include font-size(70px);
+  }
+  @include tablets {
+    @include font-size(60px);
+  }
+  text-shadow: 1px 2px 3px rgba(234,90,58,1);
+}
+%imageBgH2 {
+  @include font-size(40px);
+  @include large-desktops {
+    @include font-size(40px);
+  }
+  @include desktops {
+    @include font-size(35px);
+  }
+  @include tablets {
+    @include font-size(35px);
+  }
+}
+
 

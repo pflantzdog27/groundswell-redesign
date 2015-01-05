@@ -1,5 +1,5 @@
 <header class="groundswell-campaigns row">
-    <h3 class="col-xs-12 col-md-5">Campaigns </h3>
+    <h3 class="col-xs-12 col-md-5">Campaigns for Justice</h3>
     <h5 id="cat-selector" class="col-xs-12 col-md-7"><span>Immigration</span> <b class="icon-arrow-down"></b></h5>
     <ul id="cat-list" class="list-unstyled clearfix">
         <li data-value="economic-justice">Economic Justice</li>
@@ -17,13 +17,13 @@
         <li data-value="women-and-girls">Women &amp; Girls</li>
     </ul>
 </header>
-<div id="petitions" class="scroll-area">
+<div id="petitions" class="petition-widget scroll-area">
     <script id="petitionsLayout" type="text/html">
         {{#.}}
             <div class="item row" id="petitionID-{{index}}">
                 <figure class="col-xs-4 col-sm-3">
                     <img class="img-responsive" src="{{image}}" alt="{{title}}">
-                    <figcaption class="progress progress-striped active">
+                    <figcaption class="progress">
                         <div class="progress-bar status-bar"  role="progressbar" aria-valuenow="{{ percent }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ percent }}%">
                             <p>&nbsp;</p>
                         </div>

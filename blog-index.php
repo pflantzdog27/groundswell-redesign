@@ -57,7 +57,6 @@
 <section id="petition-wrap" class="content-section" style="background: #44aeea;">
     <div class="container">
         <div class="parallax">
-            <h2 class="section-title">Campaigns for Justice</h2>
             <?php include('partials/petitions-app.php');?>
         </div>
     </div>

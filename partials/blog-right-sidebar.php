@@ -1,4 +1,4 @@
-<aside class="col-sm-3" id="right-sidebar">
+<aside class="col-sm-3 col-xs-12" id="right-sidebar">
     <div class="sidebar-widget">
         <div class="select-menu">
             <div class="select-box">
@@ -21,16 +21,6 @@
                     <button class="btn gs-btn gs-btn-blue"><span class="glyphicon glyphicon-search"></span></button>
                 </div>
             </form>
-        </div>
-    </div>
-
-    <div class="sidebar-widget">
-        <div class="social-link-column">
-            <ul class="list-unstyled">
-                <li class="facebook"><a href="#"><i class="icon-facebook"></i> Facebook</a></li>
-                <li class="twitter"><a href="#"><i class="icon-twitter"></i> Twitter</a></li>
-                <li class="email"><a href="#"><i class="icon-mail"></i> Email</a></li>
-            </ul>
         </div>
     </div>
 

@@ -9,10 +9,11 @@
         min-height: 400px;
         hgroup {
           h1 {
+           @extend %imageBgH1;
             color: #fff;
           }
           h2 {
-            font-weight: 300;
+            @extend %imageBgH2;
           }
         }
       }
@@ -33,7 +34,6 @@
 }
 #slider-wrapper {
   padding-top: 20px;
-  padding-bottom: 0;
 }
 
 #stats {

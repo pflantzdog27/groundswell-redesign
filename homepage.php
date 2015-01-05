@@ -62,7 +62,7 @@
                         justice inspired by your faith and values.</p>
                     <p>We’ve got a <a href="#"><strong>FREE Online Tool</strong></a> Set to help.</p>
                 </article>
-                <button class="btn gs-btn gs-btn-blue">Learn More</button>
+                <button class="btn gs-btn gs-btn-orange">Learn More</button>
             </div>
             <div class="section-right-column col-sm-6" id="petition-wrap">
                 <?php include('partials/petitions-app.php');?>
@@ -99,7 +99,7 @@
                 <article>
                     <p>We offer <a href="#"><strong>TRAININGS</strong></a> that help faith leaders and organizers get better at faith-rooted organizing in a modern age—and with digital tools! Plus, story-telling for social change, speaking prophetically in the media, and more.</p>
                 </article>
-                <button class="btn gs-btn gs-btn-white">Learn More and Book a Training</button>
+                <button class="btn gs-btn gs-btn-orange">Learn More and Book a Training</button>
             </div>
             <div class="section-overlay">
                 <article>
@@ -124,7 +124,7 @@
                     <p>We’ve created a watering hole for the multifaith movement for justice to gather and get the most irresistible faith and justice content.</p>
                     <p>Check out the fun, faithful, and inspiring videos, photos, memes, and more from around the internet.</p>
                 </article>
-                <button class="btn gs-btn gs-btn-white">Learn More about how we inspire</button>
+                <button class="btn gs-btn gs-btn-orange">Learn More about how we inspire</button>
             </div>
             <div class="section-right-column col-sm-6" id="petition-wrap">
                 <figure>
@@ -273,7 +273,7 @@
         <div class="section-template parallax single-column-section row">
             <h2 class="section-title col-sm-12">Our Friends &amp; Partners</h2>
             <div class="col-sm-12">
-                <?php include('partials/image-carousel.php');?>
+                <?php include('partials/image-carousel-3cols.php');?>
             </div>
         </div>
     </div>

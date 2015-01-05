@@ -6,6 +6,7 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Who We Are</a></li>
                     <li><a href="#">What We Do</a></li>
+                    <li><a href="#">Donate</a></li>
                 </ul>
             </div>
             <div class="col-sm-4" id="jump-buttons">
@@ -16,7 +17,7 @@
                     <li><a href="#">Donate</a></li>
                 </ul>
             </div>
-            <div class="col-sm-4" id="contact-info">
+            <div class="col-sm-4 text-right" id="contact-info">
                 <h4>Contact Us</h4>
                 <ul class="list-unstyled">
                     <li><a href="https://www.google.com/maps/place/475+Riverside+Dr,+Columbia+University,+New+York,+NY+10027/@40.8110082,-73.9639807,17z/data=!3m1!4b1!4m2!3m1!1s0x89c2f63f42f03e5b:0xf9f4c2eab6281ece" target="_blank"><i
@@ -47,6 +48,7 @@
     <script src="js/jquery.mCustumScrollbar.3.0.5.min.js"></script>
     <script src="js/mustache.js"></script>
     <script src="js/jquery.counter.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/gs_all.js"></script>
 
 

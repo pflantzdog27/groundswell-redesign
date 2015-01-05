@@ -5,6 +5,7 @@
   border: 1px solid #eaeaea;
   margin: 0;
   width: 100%;
+  background: #fff;
     h3 {
       text-transform: uppercase;
       color: #eaeaea;
@@ -42,11 +43,12 @@
     }
 }
 
-#petitions {
+.petition-widget {
   border: 1px solid #eaeaea;
   overflow: auto;
   height: 250px;
   position: relative;
+  background: #fff;
     .item {
       padding-top: 10px;
       padding-bottom: 10px;
@@ -104,6 +106,24 @@
   z-index: 2;
 }
 
+.block-layout-petitions {
+  figure {
+    overflow: hidden;
+      img {
+        max-height: 170px;
+        min-width: 100%;
+      }
+  }
+    .progress {
+      position: relative;
+        span {
+          position: absolute;
+          left: 20px;
+          color: #fff;
+          bottom: 0;
+        }
+    }
+}
 /*
 .carousel-control {
   //background: none!important;
@@ -127,3 +147,6 @@
     }
 }
 */
+.petition {
+  margin-bottom: 25px;
+}

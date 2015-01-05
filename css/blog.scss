@@ -1,4 +1,12 @@
-//POSTS
+#blog {
+  @include box-shadow(0,0);
+}
+.post-intro {
+  border-left: 1px solid #eaeaea;
+}
+.author {
+  padding-left: 0;
+}
 
 .blog-post {
   margin-bottom: 25px;
@@ -83,6 +91,16 @@
           font-weight: 300;
         }
     }
+}
+
+#social-navigation {
+    position: relative;
+      .social-link-column {
+        position: fixed;
+        top: 90px;
+        width: 5%;
+        z-index: 9;
+      }
 }
 
 .contact-curator {

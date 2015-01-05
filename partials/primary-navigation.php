@@ -2,7 +2,7 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navigation">
+            <button type="button" class="navbar-toggle collapsed" id="hamburger-toggle" data-toggle="collapse" data-target="#primary-navigation">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -17,7 +17,7 @@
                 <li><a href="#">Who We Are</a></li>
                 <li><a href="#">What We Do</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Talk to Us</a></li>
                 <li class="hidden-xs search-toggle"><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
             </ul>
             <form id="primary-search-field" role="search">

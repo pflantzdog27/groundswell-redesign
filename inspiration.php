@@ -83,10 +83,11 @@
             <div>
                 <article>
                     <p>Send us your best and we'll put it up on one of our special pages - they're optimized for helping your videos, photos, memes and more go viral.</p>
-                    <div class="social-link-bar">
-                        <ul class="list-unstyled col-sm-10 col-sm-offset-2">
-                            <li class="facebook col-sm-5"><a href="#"><i class="icon-facebook"></i> Facebook</a></li>
-                            <li class="twitter col-sm-5"><a href="#"><i class="icon-twitter"></i> Twitter</a></li>
+                    <div class="social-link-bar parallax">
+                        <ul class="list-unstyled row">
+                            <li class="facebook col-sm-4"><a href="#"><i class="icon-facebook"></i> Facebook</a></li>
+                            <li class="twitter col-sm-4"><a href="#"><i class="icon-twitter"></i> Twitter</a></li>
+                            <li class="email col-sm-4"><a href="#"><i class="icon-mail"></i> Email</a></li>
                         </ul>
                         <div class="clearfix"></div>
                     </div>
@@ -96,7 +97,7 @@
     </div>
 </section>
 
-<aside class="section-breaker" style="background: #44aeea;">
+<aside class="section-breaker" style="background: #44aeea; display:none;">
     <div class="container">
         <div class="row">
             <header class="col-sm-6">

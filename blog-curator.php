@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-9">
-                <h1>Curator:<b>Esther Mere&#324;o</b></h1>
+                <h1>Esther Mere&#324;o</h1>
                 <div class="contact-curator">
                     <a href="#"><i class="icon-mail"></i>Email</a>
                     <a href="#"><i class="icon-twitter"></i>Twitter</a>
@@ -25,8 +25,8 @@
 <section id="blog" class="content-section">
     <div class="container">
         <div class="section-template parallax three-column-section row">
-            <?php include('partials/row-blog-posts.php');?>
-            <?php include('partials/row-blog-posts.php');?>
+            <?php include('partials/row-blog-posts-short.php');?>
+            <?php include('partials/row-blog-posts-short.php');?>
         </div>
     </div>
 </section>

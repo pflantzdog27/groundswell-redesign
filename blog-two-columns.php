@@ -4,7 +4,16 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-9" id="blog-left-column">
+        <div class="col-sm-1 col-xs-1" id="social-navigation">
+            <div class="social-link-column">
+                <ul class="list-unstyled">
+                    <li class="facebook"><a href="#"><i class="icon-facebook"></i></a></li>
+                    <li class="twitter"><a href="#"><i class="icon-twitter"></i></a></li>
+                    <li class="email"><a href="#"><i class="icon-mail"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-8 col-sm-offset-0 col-xs-11 col-xs-offset-1" id="blog-left-column">
             <header class="single-post-header">
                 <h1>Blog Post Title goes here, over one or two lines of text - here and here and here and here</h1>
             </header>
@@ -55,8 +64,8 @@
 <section id="blog" class="content-section">
     <div class="container">
         <div class="section-template parallax three-column-section row">
-            <?php include('partials/row-blog-posts.php');?>
-            <?php include('partials/row-blog-posts.php');?>
+            <?php include('partials/row-blog-posts-short.php');?>
+            <?php include('partials/row-blog-posts-short.php');?>
         </div>
     </div>
 </section>
@@ -64,7 +73,6 @@
 <section id="petition-wrap" class="content-section" style="background: #44aeea;">
     <div class="container">
         <div class="parallax">
-            <h2 class="section-title">Campaigns for Justice</h2>
             <?php include('partials/petitions-app.php');?>
         </div>
     </div>
