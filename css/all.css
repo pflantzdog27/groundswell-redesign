@@ -1196,7 +1196,7 @@ div.vjs-loading-spinner .ball8 {
     font-size: 300px;
     font-size: 18.75rem;
     font-style: italic;
-    color: rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.4);
     font-family: "Titillium Web", sans-serif;
     line-height: .6; }
     .content-section .section-number span {
@@ -1285,13 +1285,7 @@ div.vjs-loading-spinner .ball8 {
 
 #training {
   min-height: 600px;
-  padding-bottom: 300px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat; }
+  padding-bottom: 300px; }
   #training .section-number {
     color: rgba(255, 255, 255, 0.2); }
 
@@ -3242,6 +3236,14 @@ button:active {
   text-transform: uppercase; }
   .jumbotron h1 {
     color: #44aeea; }
+
+.coverBG {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
 
 .social-link-bar, .social-link-column {
   padding: 15px 0; }

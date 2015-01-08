@@ -39,7 +39,7 @@ GS.navigation = new function(){
     this.navigationBoxShadow = function() {
         $('#primary-navigation-wrapper').css('box-shadow', 'none');
         var distance = $('.content-section').eq(0).offset().top;
-        var offset = 75;
+        var offset = 70;
         $(window).scroll(function() {
             if ($(window).scrollTop() >= distance - offset) {
                 $('#primary-navigation-wrapper').css('box-shadow', '0px 1px 8px 0px rgba(0, 0, 0, 0.6)');

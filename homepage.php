@@ -88,7 +88,7 @@
 </aside>
 
 <!-- TRAININGS -->
-<section id="training" class="content-section" style="color:#fff; background-image: url(images/training-bg.jpg);">
+<section id="training" class="coverBG content-section" style="color:#fff; background-image: url(images/training-bg.jpg);">
     <aside class="section-number">
         <span>2</span>
     </aside>
@@ -112,7 +112,7 @@
     </div>
 </section>
 
-<section id="inspiration" class="content-section" style="color:#fff; background: #44aeea;">
+<section id="inspiration" class="coverBG content-section" style="color:#fff; background-image: url(images/inspiration.jpg);">
     <aside class="section-number">
         <span>3</span>
     </aside>
@@ -125,11 +125,6 @@
                     <p>Check out the fun, faithful, and inspiring videos, photos, memes, and more from around the internet.</p>
                 </article>
                 <button class="btn gs-btn gs-btn-orange">Learn More about how we inspire</button>
-            </div>
-            <div class="section-right-column col-sm-6" id="petition-wrap">
-                <figure>
-                    <img class="img-responsive align-center" src="images/inspiration-home.png" alt="Inspiration Collage">
-                </figure>
             </div>
         </div>
     </div>

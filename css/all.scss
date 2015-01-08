@@ -17,6 +17,8 @@
 @import 'footer';
 
 
+
+
 /* gs bootstrap */
 body {
   font-size: 16px;
@@ -147,6 +149,9 @@ button:active {
   }
 }
 
+.coverBG {
+  @include coverBG();
+}
 
 .social-link-bar, .social-link-column {
   padding: 15px 0;

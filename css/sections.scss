@@ -10,7 +10,7 @@
       left: 0;
       @include font-size(300px);
       font-style: italic;
-      color: rgba(0,0,0,0.2);
+      color: rgba(0,0,0,0.4);
       font-family: $numberCustomFont;
       line-height: .6;
         span {
@@ -106,7 +106,6 @@
 #training {
   min-height: 600px;
   padding-bottom: 300px;
-  @include coverBG();
     .section-number {
       color: rgba(255,255,255,0.2);
     }
