@@ -584,11 +584,15 @@ $(function() {
         GS.scrolloramaEffects.parallax('#petition-wrap');
     }
 
-    if(bodyClass == 'blog-single-video' || bodyClass == 'blog-two-columns') { // BLOG VIDEO PAGE BOTH LAYOUTS
+    if(bodyClass == 'blog-two-columns') { // BLOG Article
+        GS.blog.selectMenu();
+        GS.blog.affixSocialIcons();
+    }
+
+    if(bodyClass == 'blog-single-video') { // BLog Video
         GS.scrolloramaEffects.blog_single_video('.blog-single-video');
         GS.scrolloramaEffects.blog_single_video('.blog-two-columns');
         GS.blog.selectMenu();
-        GS.blog.affixSocialIcons();
     }
 
     if(bodyClass == 'blog-index' || bodyClass == 'home') { // BLOG AND HOME
