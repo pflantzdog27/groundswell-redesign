@@ -65,7 +65,7 @@
                 <button class="btn gs-btn gs-btn-orange">Learn More</button>
             </div>
             <div class="section-right-column col-sm-6" id="petition-wrap">
-                <?php include('partials/petitions-app.php');?>
+                <?php include('partials/petitions-app-small.php');?>
             </div>
         </div>
     </div>

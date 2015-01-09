@@ -73,7 +73,7 @@
 <section id="petition-wrap" class="content-section" style="background: #44aeea;">
     <div class="container">
         <div class="parallax">
-            <?php include('partials/petitions-app.php');?>
+            <?php include('partials/petitions-app-large.php');?>
         </div>
     </div>
 </section>

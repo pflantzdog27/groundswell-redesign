@@ -1,20 +1,20 @@
 <header class="groundswell-campaigns row">
-    <h3 class="col-xs-12 col-md-5">Campaigns for Justice</h3>
-    <h5 id="cat-selector" class="col-xs-12 col-md-7"><span>Immigration</span> <b class="icon-arrow-down"></b></h5>
+    <h3 class="col-xs-12 col-md-5">Campaigns</h3>
+    <h5 id="cat-selector" class="col-xs-12 col-md-7"><span>Featured</span> <b class="icon-arrow-down"></b></h5>
     <ul id="cat-list" class="list-unstyled clearfix">
-        <li data-value="economic-justice">Economic Justice</li>
-        <li data-value="education-4">Education</li>
-        <li data-value="environmental-concerns">Environmental Concerns</li>
-        <li data-value="foreign-polcy">Foreign Policy</li>
-        <li data-value="gun-violence">Gun Violence</li>
-        <li data-value="human-trafficking">Human Trafficking</li>
-        <li data-value="immigration">Immigration</li>
-        <li data-value="lgbtq">LGBT Equality</li>
-        <li data-value="poverty">Poverty</li>
-        <li data-value="racial-religious-dignity">Racial &amp; Religious Dignity</li>
-        <li data-value="reproductive-rights">Reproductive Rights</li>
-        <li data-value="sanctuary">Sanctuary</li>
-        <li data-value="women-and-girls">Women &amp; Girls</li>
+        <li data-value="categories/economic-justice">Economic Justice</li>
+        <li data-value="categories/education-4">Education</li>
+        <li data-value="categories/environmental-concerns">Environmental Concerns</li>
+        <li data-value="categories/foreign-polcy">Foreign Policy</li>
+        <li data-value="categories/gun-violence">Gun Violence</li>
+        <li data-value="categories/human-trafficking">Human Trafficking</li>
+        <li data-value="categories/immigration">Immigration</li>
+        <li data-value="categories/lgbtq">LGBT Equality</li>
+        <li data-value="categories/poverty">Poverty</li>
+        <li data-value="categories/racial-religious-dignity">Racial &amp; Religious Dignity</li>
+        <li data-value="categories/reproductive-rights">Reproductive Rights</li>
+        <li data-value="categories/sanctuary">Sanctuary</li>
+        <li data-value="categories/women-and-girls">Women &amp; Girls</li>
     </ul>
 </header>
 <div id="petitions" class="petition-widget scroll-area">
@@ -31,7 +31,7 @@
                     </figcaption>
                 </figure>
                 <div class="col-xs-8 col-sm-9">
-                    <h4>{{title}}</h4>
+                    <h4><a href="{{url}}" target="_blank">{{title}}</a></h4>
                     <footer class="petition-meta-info">
                         <small>Created by: <b>{{creator}}</b></small>
                         <p><small><a href="{{url}}" target="_blank">Click to sign petition</a> or <a href="{{url}}" target="_blank">Learn more</a></small></p>

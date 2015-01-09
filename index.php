@@ -16,7 +16,7 @@
                     <td><a href="blog-index.php">Blog Index</a></td>
                 </tr>
                 <tr>
-                    <td><a href="blog-single-video.php">Blog Single Post (Video)</a></td>
+                    <td><a href="blog-single-video.php">Blog Single Post (Inspiration)</a></td>
                 </tr>
                 <tr>
                     <td><a href="blog-two-columns.php">Blog Single Post (Two Columns)</a></td>

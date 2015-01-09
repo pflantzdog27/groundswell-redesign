@@ -326,16 +326,21 @@ GS.scrolloramaEffects = new function() {
 };
 
 GS.petitions = new function() {
-    var categorySlug = 'immigration';
+    var categorySlug = 'featured';
     var catSelectorButton = $('#cat-selector');
     var petitionWrapperID = '#petitions';
     var petitions = $(petitionWrapperID);
     this.petitionsGenerator = function(){
         var galleryTemplate = $('#petitionsLayout').html();
         var petitionList = [];
-        var jsonRequest = $.getJSON('http://action.groundswell-mvmt.org/categories/'+categorySlug+'.json?callback=?', function (data) {
+        var jsonRequest = $.getJSON('http://action.groundswell-mvmt.org/'+categorySlug+'.json?callback=?', function (data) {
             var displayLimit = 0;
-            $.each(data.results, function (i, item) {
+            if(categorySlug == 'featured'){
+                var dataObject = data;
+            } else {
+                var dataObject = data.results;
+            }
+            $.each(dataObject, function (i, item) {
                 if (displayLimit <= 3) {
                     var percentage = (item.signature_count / item.goal) * 100;
                     var fromNow = moment(item.created_at).fromNow();

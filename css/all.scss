@@ -141,7 +141,6 @@ button:active {
   padding-right: 0;
   text-transform: uppercase;
   h1 {
-    color: $gsBlue;
     @extend %imageBgH1;
   }
   h2 {
@@ -338,7 +337,7 @@ button:active {
     display: none;
     position: absolute;
     left: 2px;
-    right: 2px; 
+    right: 2px;
     top: 100%;
     @include box-shadow(0px 1px 4px 4px, rgba(68,174,234,0.1));
     li {

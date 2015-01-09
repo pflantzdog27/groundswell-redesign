@@ -215,7 +215,7 @@ Extenders
   @include tablets {
     @include font-size(60px);
   }
-  text-shadow: 1px 2px 3px rgba(234,90,58,1);
+  text-shadow: 2px 4px 7px rgba(234,90,58,1);
 }
 %imageBgH2 {
   @include font-size(40px);

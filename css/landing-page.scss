@@ -2,20 +2,12 @@
   @include coverBG;
     #hero {
       background: rgba(0,0,0,0.4);
+      color: #fff;
       .container {
         @include flexbox;
         @include flexdirection(row);
         @include flexAlignItems(center);
         min-height: 400px;
-        hgroup {
-          h1 {
-           @extend %imageBgH1;
-            color: #fff;
-          }
-          h2 {
-            @extend %imageBgH2;
-          }
-        }
       }
     }
 }

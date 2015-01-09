@@ -8,7 +8,7 @@
   background: #fff;
     h3 {
       text-transform: uppercase;
-      color: #eaeaea;
+      color: #333;
     }
     #cat-selector {
       margin: 20px 0 10px;
@@ -52,22 +52,27 @@
     .item {
       padding-top: 10px;
       padding-bottom: 10px;
+      padding-left: 10px;
       margin: 0;
+      border-bottom: 1px solid rgba(0,0,0,0.2);
         h4 {
           margin-top: 0;
         }
-        figcaption {
-          position: relative;
-            span {
-              position: absolute;
-              top: 2px;
-              left: 3px;
-              @include font-size(18px);
-              color: #fff;
+        figure {
+          @include box-shadow(0 4px 2px -2px, gray);
+          padding: 0;
+            figcaption {
+              position: relative;
+              span {
+                position: absolute;
+                top: 2px;
+                left: 3px;
+                @include font-size(18px);
+                color: #fff;
+              }
             }
         }
         .petition-meta-info {
-          border-top: 1px solid rgba(0,0,0,0.1);
             a {
               color: $gsOrange;
             }
@@ -126,4 +131,8 @@
 }
 .petition {
   margin-bottom: 25px;
+}
+
+.mCSB_inside > .mCSB_container {
+   margin-right: 0!important;
 }

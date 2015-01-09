@@ -264,35 +264,35 @@ Extenders
   -moz-justify-content: center;
   justify-content: center; }
 
-.first-level-intro #hero .container hgroup h1, .page-header h1, .jumbotron h1 {
+#intro-section #hero .container h1, .page-header h1, .jumbotron h1 {
   font-weight: 300;
-  text-shadow: 1px 2px 3px #ea5a3a; }
+  text-shadow: 2px 4px 7px #ea5a3a; }
   @media only screen and (max-width: 1200px) {
-    .first-level-intro #hero .container hgroup h1, .page-header h1, .jumbotron h1 {
+    #intro-section #hero .container h1, .page-header h1, .jumbotron h1 {
       font-size: 70px;
       font-size: 4.375rem; } }
   @media only screen and (max-width: 992px) {
-    .first-level-intro #hero .container hgroup h1, .page-header h1, .jumbotron h1 {
+    #intro-section #hero .container h1, .page-header h1, .jumbotron h1 {
       font-size: 70px;
       font-size: 4.375rem; } }
   @media only screen and (max-width: 768px) {
-    .first-level-intro #hero .container hgroup h1, .page-header h1, .jumbotron h1 {
+    #intro-section #hero .container h1, .page-header h1, .jumbotron h1 {
       font-size: 60px;
       font-size: 3.75rem; } }
 
-.first-level-intro #hero .container hgroup h2, .page-header h2, .jumbotron h2 {
+#intro-section #hero .container h2, .page-header h2, .jumbotron h2 {
   font-size: 40px;
   font-size: 2.5rem; }
   @media only screen and (max-width: 1200px) {
-    .first-level-intro #hero .container hgroup h2, .page-header h2, .jumbotron h2 {
+    #intro-section #hero .container h2, .page-header h2, .jumbotron h2 {
       font-size: 40px;
       font-size: 2.5rem; } }
   @media only screen and (max-width: 992px) {
-    .first-level-intro #hero .container hgroup h2, .page-header h2, .jumbotron h2 {
+    #intro-section #hero .container h2, .page-header h2, .jumbotron h2 {
       font-size: 35px;
       font-size: 2.1875rem; } }
   @media only screen and (max-width: 768px) {
-    .first-level-intro #hero .container hgroup h2, .page-header h2, .jumbotron h2 {
+    #intro-section #hero .container h2, .page-header h2, .jumbotron h2 {
       font-size: 35px;
       font-size: 2.1875rem; } }
 
@@ -1139,7 +1139,6 @@ div.vjs-loading-spinner .ball8 {
       -moz-align-items: center;
       align-items: center; }
       #intro-section #hero .container h1 {
-        text-shadow: 0px 2px 9px rgba(0, 0, 0, 0.3);
         color: #fff; }
     #intro-section #hero #playback-control {
       position: absolute;
@@ -1217,7 +1216,7 @@ div.vjs-loading-spinner .ball8 {
       position: relative;
       font-weight: 300; }
       .content-section .section-template .section-overlay article .icon-comment {
-        color: rgba(255, 255, 255, 0.3);
+        color: rgba(0, 0, 0, 0.3);
         position: absolute;
         top: 0;
         left: -100px;
@@ -1288,6 +1287,9 @@ div.vjs-loading-spinner .ball8 {
   padding-bottom: 300px; }
   #training .section-number {
     color: rgba(255, 255, 255, 0.2); }
+  #training .section-overlay {
+    background: #fff;
+    color: #333; }
 
 #fine-print p {
   font-size: 30px;
@@ -1359,7 +1361,7 @@ div.vjs-loading-spinner .ball8 {
   background: #fff; }
   .groundswell-campaigns h3 {
     text-transform: uppercase;
-    color: #eaeaea; }
+    color: #333; }
   .groundswell-campaigns #cat-selector {
     margin: 20px 0 10px;
     font-weight: 300;
@@ -1399,22 +1401,27 @@ div.vjs-loading-spinner .ball8 {
   .petition-widget .item {
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 0; }
+    padding-left: 10px;
+    margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
     .petition-widget .item h4 {
       margin-top: 0; }
-    .petition-widget .item figcaption {
-      position: relative; }
-      .petition-widget .item figcaption span {
-        position: absolute;
-        top: 2px;
-        left: 3px;
-        font-size: 18px;
-        font-size: 1.125rem;
-        color: #fff; }
-    .petition-widget .item .petition-meta-info {
-      border-top: 1px solid rgba(0, 0, 0, 0.1); }
-      .petition-widget .item .petition-meta-info a {
-        color: #ea5a3a; }
+    .petition-widget .item figure {
+      -webkit-box-shadow: 0 4px 2px -2px gray;
+      -moz-box-shadow: 0 4px 2px -2px gray;
+      box-shadow: 0 4px 2px -2px gray;
+      padding: 0; }
+      .petition-widget .item figure figcaption {
+        position: relative; }
+        .petition-widget .item figure figcaption span {
+          position: absolute;
+          top: 2px;
+          left: 3px;
+          font-size: 18px;
+          font-size: 1.125rem;
+          color: #fff; }
+    .petition-widget .item .petition-meta-info a {
+      color: #ea5a3a; }
 
 .progress {
   margin-bottom: 0;
@@ -1460,6 +1467,9 @@ div.vjs-loading-spinner .ball8 {
 
 .petition {
   margin-bottom: 25px; }
+
+.mCSB_inside > .mCSB_container {
+  margin-right: 0 !important; }
 
 .mCustomScrollbar {
   -ms-touch-action: none;
@@ -2663,7 +2673,8 @@ div.vjs-loading-spinner .ball8 {
   background-position: center center;
   background-repeat: no-repeat; }
   .first-level-intro #hero {
-    background: rgba(0, 0, 0, 0.4); }
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff; }
     .first-level-intro #hero .container {
       display: -webkit-box;
       display: -moz-box;
@@ -2682,8 +2693,6 @@ div.vjs-loading-spinner .ball8 {
       -moz-align-items: center;
       align-items: center;
       min-height: 400px; }
-      .first-level-intro #hero .container hgroup h1 {
-        color: #fff; }
 
 #landing-page-content {
   padding: 50px 0 75px; }
@@ -3211,8 +3220,6 @@ button:active {
   padding-left: 0 !important;
   padding-right: 0;
   text-transform: uppercase; }
-  .jumbotron h1 {
-    color: #44aeea; }
 
 .coverBG {
   -webkit-background-size: cover;
