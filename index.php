@@ -16,10 +16,10 @@
                     <td><a href="blog-index.php">Blog Index</a></td>
                 </tr>
                 <tr>
-                    <td><a href="blog-single-video.php">Blog Single Post (Inspiration)</a></td>
+                    <td><a href="blog-single-video.php">Inspiration Post Page (blog single post page)</a></td>
                 </tr>
                 <tr>
-                    <td><a href="blog-two-columns.php">Blog Single Post (Two Columns)</a></td>
+                    <td><a href="blog-two-columns.php">Blog Post Page (blog single post page)</a></td>
                 </tr>
                 <tr>
                     <td><a href="blog-curator.php">Blog Curator</a></td>

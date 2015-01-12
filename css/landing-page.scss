@@ -14,14 +14,14 @@
 #landing-page-content {
   padding: 50px 0 75px;
     #feature-block {
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 }
 .content-title {
   color: $gsBlue;
   text-transform: uppercase;
-  padding-top: 30px;
+  padding-top: 0;
   padding-bottom: 30px;
 }
 #slider-wrapper {
@@ -132,7 +132,7 @@
       right: 0;
       text-align: center;
       button {
-        width: 80%;
+        width: 60%;
       }
     }
     &:last-child {

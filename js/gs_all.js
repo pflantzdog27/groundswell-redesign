@@ -213,12 +213,15 @@ GS.scrolloramaEffects = new function() {
             tweeningElement,
             (new TimelineLite())
                 .append([
-                    TweenMax.fromTo($(tweeningElement+ ' .company-meta-block:nth-child(even)'), .1 ,
+                    TweenMax.fromTo($(tweeningElement+ ' .company-meta-block:nth-child(0)'), .1 ,
                         {css:{'padding-left' : 15 }, immediateRender:true},
                         {css:{'padding-left' : 0}}),
-                    TweenMax.fromTo($(tweeningElement+ ' .company-meta-block:nth-child(odd)'), .1 ,
+                    TweenMax.fromTo($(tweeningElement+ ' .company-meta-block:nth-child(1)'), .1 ,
                         {css:{'padding-right' : 15 }, immediateRender:true},
                         {css:{'padding-right' : 0}}),
+                    TweenMax.fromTo($(tweeningElement+ ' .company-meta-block:nth-child(2)'), .1 ,
+                        {css:{'padding-top' : 15 }, immediateRender:true},
+                        {css:{'padding-top' : 0}}),
                     TweenMax.fromTo($(tweeningElement+ ' .large-icon'), .1 ,
                         {css:{zoom: 0.8 }, immediateRender:true},
                         {css:{zoom: 1}})
@@ -381,6 +384,29 @@ GS.petitions = new function() {
                 console.log("Error");
             });
     };
+
+    this.categoryGenerator = function(){
+        var galleryTemplate = $('#categoryLayout').html();
+        var list = [];
+        var jsonRequest = $.getJSON('http://action.groundswell-mvmt.org/categories.json?callback=?', function (data) {
+            $.each(data, function (i, item) {
+                list.push({
+                    slug: item.slug,
+                    category : item.category_name
+                })
+            });
+        })
+        .done(function () {
+                $('#loading-image').fadeOut(300,function() {
+                    $(this).remove();
+                })
+                $('#cat-list').prepend(Mustache.render(galleryTemplate, list));
+        })
+        // error handling here
+        .fail(function () {
+            console.log("Error");
+        });
+    };
     this.scrollBar = function() {
         $('.scroll-area').mCustomScrollbar( {
             theme:"dark"
@@ -390,6 +416,10 @@ GS.petitions = new function() {
         $('#petition-wrap').on('click','#cat-selector', function() {
             $('#cat-list').slideToggle(300);
             catSelectorButton.find('b').toggleClass('icon-arrow-down, icon-arrow-up');
+            if($('#cat-list > li').length == 0) {
+                $('<div></div>').attr('id','loading-image').appendTo('#cat-list');
+                GS.petitions.categoryGenerator();
+            }
         });
     };
     this.selectCategory = function() {
@@ -398,7 +428,7 @@ GS.petitions = new function() {
             catSelectorButton.find('span').text($(this).text());
             $('#cat-list').slideToggle(300);
             categorySlug = $(this).attr('data-value');
-            $('<div></div>').attr('id','loading-image').appendTo(petitionWrapperID);
+            $('<div></div>').attr('id','loading-image').appendTo('#cat-list');
             GS.petitions.petitionsGenerator();
         });
     }

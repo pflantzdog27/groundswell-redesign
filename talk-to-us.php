@@ -6,9 +6,9 @@
     <div class="container">
         <h1>Talk to Us</h1>
         <h2>You're here&mdash;Great!</h2>
-        <p>Below you'll find information on where to call us or send us an email.</p>
-        <p>We're friendly and love to collaborate.</p>
-        <p>If you're working for justice or believe that faith can be a source for good in the world, we'd love to talk with you.</p>
+        <p>Below you'll find an easy contact form that goes directly to our inboxes.</p>
+        <p>We're friendly, fast to reply, and love to collaborate.</p>
+        <p>If you're working for justice or believe that faith can be a source for good in the world, we'd love to know you're out there and dream up some ways we can partner together. Please say hi! </p>
     </div>
 </header>
 
@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-6 company-meta-block">
-                <div style="background: #44aeea; color: #fff;">
+                <div style="background: #ea5a3a; color: #fff;">
                     <span class="large-icon icon-location"></span>
                     <div class="vcard">
                         <h2>Groundswell</h2>
@@ -28,15 +28,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-6 company-meta-block">
-                <div style="background: #fff; color: #333;">
-                    <figure>
-                        <a href="#"><img class="img-responsive" src="images/map.jpg" alt="Map"></a>
-                    </figure>
-                </div>
-            </div>
-        </div>
-        <div class="row">
             <div class="company-meta-block col-xs-6">
                 <div style="background: #fff; color: #44aeea;">
                     <span class="large-icon icon-phone"></span>
@@ -45,11 +36,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-6 company-meta-block">
-                <div style="background: #ea5a3a; color: #fff;">
-                    <span class="large-icon icon-mail"></span>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 company-meta-block">
+                <div style="background: #44aeea; color: #fff;">
                     <div>
-                        <h2><a href="#">Email Us</a></h2>
+                        <?php include('partials/contact-form.php');?>
                     </div>
                 </div>
             </div>

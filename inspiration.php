@@ -81,17 +81,14 @@
         <div>
             <h2 class="section-title">Receive regular digests of the best faithful stuff on the internet</h2>
             <div>
-                <article>
-                    <p>Send us your best and we'll put it up on one of our special pages - they're optimized for helping your videos, photos, memes and more go viral.</p>
-                    <div class="social-link-bar parallax">
-                        <ul class="list-unstyled row">
-                            <li class="facebook col-sm-4"><a href="#"><i class="icon-facebook"></i> Facebook</a></li>
-                            <li class="twitter col-sm-4"><a href="#"><i class="icon-twitter"></i> Twitter</a></li>
-                            <li class="email col-sm-4"><a href="#"><i class="icon-mail"></i> Email</a></li>
-                        </ul>
-                        <div class="clearfix"></div>
-                    </div>
-                </article>
+                <div class="social-link-bar parallax">
+                    <ul class="list-unstyled row">
+                        <li class="facebook col-sm-4"><a href="#"><i class="icon-facebook"></i> Facebook</a></li>
+                        <li class="twitter col-sm-4"><a href="#"><i class="icon-twitter"></i> Twitter</a></li>
+                        <li class="email col-sm-4"><a href="#"><i class="icon-mail"></i> Email</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -118,13 +115,19 @@
     <div class="container">
         <div class="section-template two-column-section row">
             <h2 class="section-title col-sm-12">Share your Content</h2>
-            <div class="section-left-column col-sm-9">
+            <div class="section-left-column col-sm-7">
                 <article>
                     <p>Send us your best and we'll put it up on one of our special pages - they're optimized for helping your videos, photos, memes and more go viral.</p>
                 </article>
             </div>
-            <div class="section-right-column col-sm-3">
-                <button class="btn gs-btn gs-btn-orange col-sm-12"><i class="icon-mail"></i> Email Us</button>
+            <div class="section-right-column col-sm-5">
+                <form>
+                    <div class="form-group col-xs-8">
+                        <label class="sr-only" for="emailInput">Email address</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+                    </div>
+                    <button type="submit" class="col-xs-3 btn gs-btn gs-btn-orange">Submit</button>
+                </form>
             </div>
         </div>
     </div>
@@ -133,10 +136,10 @@
 <section id="blog" class="content-section" style="color:#333; background: #fff;">
     <div class="container">
         <div class="section-template parallax three-column-section row">
-            <h2 class="section-title col-sm-12">What's Happenning Right Now</h2>
-            <?php include('partials/row-blog-posts.php');?>
+            <h2 class="section-title col-sm-12">Recent Inspiration</h2>
+            <?php include('partials/row-blog-posts-short.php');?>
         </div>
-        <button class="btn gs-btn gs-btn-orange">Read more of the latest on our blog</button>
+        <button class="btn gs-btn gs-btn-orange">Click for more inspiration</button>
     </div>
 </section>
 

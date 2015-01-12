@@ -18,15 +18,19 @@
                 <h1>Blog Post Title goes here, over one or two lines of text - here and here and here and here</h1>
             </header>
             <section id="blog-video">
-                <div class="author-info row">
-                    <figure>
-                        <img class="img-responsive" src="http://placehold.it/50x50" alt="Author Name">
-                    </figure>
-                    <div class="author-name">
-                        <h4>First Name <br> Last Name</h4>
+                <div class="row">
+                    <div class="author-info col-xs-9">
+                        <figure>
+                            <img class="img-responsive" src="http://placehold.it/50x50" alt="Author Name">
+                        </figure>
+                        <div class="author-name">
+                            <h4>First Name <br> Last Name</h4>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <b>October 9 2014</b>
                     </div>
                 </div>
-                <b>October 9 2014</b><br><br>
                 <article class="blog-post-full">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis mi massa, vitae aliquet leo pulvinar sit amet. Vestibulum vitae magna ut risus efficitur aliquam. Nulla mauris erat, dapibus a massa eget,
                         posuere lobortis urna. Mauris luctus vestibulum elit vel accumsan. Donec vel libero ante. Duis efficitur libero nec nibh placerat, tempus molestie erat tincidunt. Fusce vitae metus lacus. Sed at fringilla mauris,
@@ -50,9 +54,8 @@
                         sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris non cursus justo, sed posuere sapien. Fusce quis tincidunt justo, nec lobortis libero. Curabitur auctor enim ligula, nec tristique ex eleifend sit amet. Aenean et dolor euismod, sagittis enim eget, tristique magna.</p>
                 </article>
                 <footer class="row">
-                    <div class="col-sm-12">
-                        <strong>More stuff like this:</strong> <small><a href="#">Category 1</a>, <a href="#">Category 2</a></small><br>
-                        <strong>About: </strong><small>Credit or info goes here</small><br>
+                    <div class="col-sm-12 text-center">
+                        <p>If you like this post <a href="#">Subscribe</a> or <a href="#">Donate</a></p>
                     </div>
                 </footer>
             </section>

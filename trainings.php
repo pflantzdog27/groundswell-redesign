@@ -179,24 +179,6 @@
     </div>
 </section>
 
-<section class="content-section full-width-image-bg" style="background-image:url('images/training_2.jpg');">
-    <div class="container">
-        <aside class="overlay-text col-sm-3">
-            <p>After the training, I’m excited
-                for growing the organization
-                from where it is to where we
-                want it to be, and to run bigger,
-                broader, better campaigns.
-                The training showed us how we
-                get our story out, use the tools,
-                and build an audience.</p>
-            <p><b>Louisa Pacheco</b><br>
-                Founder / Director,<br>
-                Gamaliel Western New York</p>
-        </aside>
-    </div>
-</section>
-
 <aside class="section-breaker" style="background: #ea5a3a;">
     <div class="container">
         <div class="row">
@@ -207,7 +189,14 @@
     </div>
 </aside>
 
-<?php include('partials/team.php');?>
+<section id="team" class="content-section" style="color:#44aeea; background: #fff;">
+    <div class="container">
+        <div class="section-template parallax single-column-section row">
+            <h2 class="section-title col-sm-12">Our Trainers</h2>
+                <?php include('partials/team.php');?>
+        </div>
+    </div>
+</section>
 
 
 

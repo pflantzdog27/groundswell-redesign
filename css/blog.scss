@@ -2,7 +2,7 @@
   @include box-shadow(0,0);
 }
 .post-intro {
-  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
 }
 .author {
   padding-left: 0;
@@ -105,9 +105,9 @@
 
 .contact-curator {
   margin: 8px 0;
+  color: $gsBlue;
 }
 #curator-info-block {
-  color: $gsBlue;
   min-height: 200px;
     figure {
       position: relative;
@@ -119,4 +119,12 @@
           max-height: 200px;
         }
     }
+    h1, p {
+      color: #333;
+    }
+
+}
+
+.outro {
+  padding-top: 10px;
 }

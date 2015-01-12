@@ -1,7 +1,3 @@
-<section id="team" class="content-section" style="color:#44aeea; background: #fff;">
-    <div class="container">
-        <div class="section-template parallax single-column-section row">
-            <h2 class="section-title col-sm-12">Our Team</h2>
             <div id="team-graphic" class="col-sm-12">
                 <ul class="list-unstyled clearfix">
                     <li>
@@ -107,6 +103,3 @@
             <div id="team-member-bio" class="col-sm-12">
 
             </div>
-        </div>
-    </div>
-</section>

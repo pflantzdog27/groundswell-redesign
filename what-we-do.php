@@ -38,7 +38,7 @@
                     <p>We’d also love to partner and help you with campaign strategy, messaging, media, social media, graphics, petition deliveries, list growth, and more.</p>
                 </div>
                 <footer>
-                    <button class="btn gs-btn gs-btn-blue">Start a Campaign</button>
+                    <button class="btn gs-btn gs-btn-orange">Start a Campaign</button>
                 </footer>
             </article>
             <article class="col-sm-12 col-md-4">
@@ -50,7 +50,7 @@
                     <p>Our trainings offer insights into and best practices for running effective campaigns that make change while building lists and power, creating “ethical spectacles,” effective digital storytelling, writing email blasts that engage, and leveraging social media to accomplish campaign goals.</p>
                 </div>
                 <footer>
-                    <button class="btn gs-btn gs-btn-blue">Book a Training</button>
+                    <button class="btn gs-btn gs-btn-orange">Book a Training</button>
                 </footer>
             </article>
             <article class="col-sm-12 col-md-4">
@@ -62,7 +62,7 @@
                     <p>So we created a multifaith watering hole for the most irresistible faith and justice content on the planet. People can come and check out videos, photos, memes and more—and share them with their friends to show, yes, faith and values can be a force for good in the world!</p>
                 </div>
                 <footer>
-                    <button class="btn gs-btn gs-btn-blue">Be Inspired</button>
+                    <button class="btn gs-btn gs-btn-orange">Be Inspired</button>
                 </footer>
             </article>
         </div>
@@ -76,10 +76,10 @@
         </header>
     </div>
     <div id="full-width-slider" class="content-wrapper carousel slide" data-ride="carousel">
-        <!--<ol class="carousel-indicators">
+        <ol class="carousel-indicators">
             <li class="active" data-target="#full-width-slider" data-slide-to="0"></li>
             <li data-target="#full-width-slider" data-slide-to="1"></li>
-        </ol>-->
+        </ol>
         <div class="carousel-inner">
             <div class="item active" style="background-image: url(images/slider-1.jpg)">
                 <footer class="text-overlay">

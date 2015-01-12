@@ -7,7 +7,6 @@
         <div class="row">
             <div class="col-sm-12">
                 <h1>Blog Post Title goes here, over one or two lines of text - here and here and here and here</h1>
-                <b>October 9 2014</b>
             </div>
         </div>
     </div>
@@ -18,6 +17,9 @@
         <div class="row">
             <div class="col-sm-9">
                 <div class="author-info row">
+                    <div class="post-intro col-sm-9">
+                        <p>Growing up in a small Baptist church in Texas, I'm used to faith making me laugh, cry, feel God's love, and want to dance. Coincidentally, all these posts do that too. Click, enjoy and share.</p>
+                    </div>
                     <div class="author col-sm-3">
                         <figure>
                             <img class="img-responsive" src="http://placehold.it/50x50" alt="Author Name">
@@ -25,9 +27,6 @@
                         <div class="author-name">
                             <h4>First Name <br> Last Name</h4>
                         </div>
-                    </div>
-                    <div class="post-intro col-sm-9">
-                        <p>Growing up in a small Baptist church in Texas, I'm used to faith making me laugh, cry, feel God's love, and want to dance. Coincidentally, all these posts do that too. Click, enjoy and share.</p>
                     </div>
                 </div>
                 <article class="blog-post-full">
@@ -45,6 +44,8 @@
                         <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen=""></iframe>
                     </div>
 
+                    <p class="outro">Optional outro. Growing up in a small Baptist church in Texas, I'm used to faith making me laugh, cry, feel God's love, and want to dance. Coincidentally, all these posts do that too. Click, enjoy and share.</p>
+
                     <div class="social-link-bar">
                         <ul class="list-unstyled col-sm-8 col-sm-offset-2">
                             <li class="facebook col-xs-4"><a href="#"><i class="icon-facebook"></i> Facebook</a></li>
@@ -53,12 +54,11 @@
                         </ul>
                         <div class="clearfix"></div>
                     </div>
-
-                    <p>Optional outro. Growing up in a small Baptist church in Texas, I'm used to faith making me laugh, cry, feel God's love, and want to dance. Coincidentally, all these posts do that too. Click, enjoy and share.</p>
                 </article>
                 <footer class="row">
-                    <div class="col-sm-12 text-center">
-                        <p>If you like this post <a href="#">Subscribe</a> or <a href="#">Donate</a></p>
+                    <div class="col-sm-12">
+                        <strong>More stuff like this:</strong> <small><a href="#">Category 1</a>, <a href="#">Category 2</a></small><br>
+                        <strong>About: </strong><small>Credit or info goes here</small><br>
                     </div>
                 </footer>
             </div>
@@ -78,6 +78,16 @@
         </div>
     </div>
 </section>
+
+<aside class="section-breaker" style="background: #ea5a3a;">
+    <div class="container">
+        <div class="row">
+            <header class="col-sm-12">
+                <button class="btn gs-btn-white col-sm-offset-3 col-sm-6">Load More Posts</button>
+            </header>
+        </div>
+    </div>
+</aside>
 
 <section id="petition-wrap" class="content-section" style="background: #44aeea;">
     <div class="container">

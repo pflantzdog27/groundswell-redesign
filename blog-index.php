@@ -48,7 +48,7 @@
     <div class="container">
         <div class="row">
             <header class="col-sm-12">
-                <h2>Load More Posts</h2>
+                <button class="btn gs-btn-white col-sm-offset-3 col-sm-6">Load More Posts</button>
             </header>
         </div>
     </div>
@@ -57,7 +57,7 @@
 <section id="petition-wrap" class="content-section" style="background: #44aeea;">
     <div class="container">
         <div class="parallax">
-            <?php include('partials/petitions-app-small.php');?>
+            <?php include('partials/petitions-app-large.php');?>
         </div>
     </div>
 </section>

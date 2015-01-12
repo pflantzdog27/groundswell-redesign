@@ -90,6 +90,9 @@
           padding-bottom: 10px;
         }
     }
+    button {
+      text-transform: uppercase;
+    }
   .form-group {
     margin-bottom: 0;
     float: left;
@@ -116,9 +119,11 @@
 }
 
 #fine-print {
+  font-style: italic;
   p {
     @include font-size(30px);
     color: $gsBlue;
+    opacity: 0.9;
   }
 }
 
@@ -186,3 +191,17 @@
     }
 }
 
+#slider-wrapper {
+  .carousel-indicators {
+    bottom: 0;
+  }
+}
+
+#contact-info {
+  padding-top: 30px;
+    .form-group {
+      padding: 10px 15px!important;
+      border: 0;
+    }
+
+}

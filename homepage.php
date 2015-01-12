@@ -58,8 +58,8 @@
             <div class="section-left-column parallax col-sm-6">
                 <h2 class="section-title">Action</h2>
                 <article>
-                    <p><a href="#"><strong>JOIN</strong></a> or <a href="#"><strong>START</strong></a> your own campaign for
-                        justice inspired by your faith and values.</p>
+                    <p><a href="#"><strong>JOIN</strong></a> or <a href="#"><strong>START</strong></a> your own campaign <span class="blue-background">for
+                        justice</span> inspired by your faith and values.</p>
                     <p>We’ve got a <a href="#"><strong>FREE Online Tool</strong></a> Set to help.</p>
                 </article>
                 <button class="btn gs-btn gs-btn-orange">Learn More</button>
@@ -140,7 +140,14 @@
     </div>
 </section>
 
-<?php include('partials/team.php'); ?>
+<section id="team" class="content-section" style="color:#44aeea; background: #fff;">
+    <div class="container">
+        <div class="section-template parallax single-column-section row">
+            <h2 class="section-title col-sm-12">Our Team</h2>
+                <?php include('partials/team.php'); ?>
+        </div>
+    </div>
+</section>
 
 <aside class="section-breaker" style="background: #ea5a3a;">
     <div class="container">

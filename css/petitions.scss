@@ -1,6 +1,9 @@
 #petition-wrap {
   color: #333;
 }
+#petition-content {
+  position: relative;
+}
 .groundswell-campaigns {
   border: 1px solid #eaeaea;
   margin: 0;
@@ -25,15 +28,22 @@
         }
      }
     #cat-list {
-      clear: both;
       background: #eaeaea;
       padding: 15px;
       display: none;
-      margin: 0;
+      margin-bottom: 0;
+      position: absolute;
+      top: 60px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 9;
+      @include box-shadow(inset 0px 1px 3px 0px, rgba(0, 0, 0, 0.2));
         li {
-          padding: 3px 10px;
-          margin: 5px;
+          padding: 5px 10px;
+          margin: 10px 5px;
           font-weight: 300;
+          border: 1px solid rgba(0,0,0,0.4);
           @include font-size(22px);
           cursor: pointer;
           float: left;
@@ -49,6 +59,7 @@
   height: 250px;
   position: relative;
   background: #fff;
+  @include box-shadow(0 8px 12px -8px, gray);
     .item {
       padding-top: 10px;
       padding-bottom: 10px;
