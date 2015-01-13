@@ -51,6 +51,19 @@ GS.navigation = new function(){
 
 };
 
+GS.forms = new function() {
+    submitted = false;
+    this.emailSubscription = function() {
+        $('#hidden_iframe').load(function(){
+            if(submitted == true){
+                $('#email-subscription form').hide(300,function() {
+                    $('<p></p>').addClass('alert alert-success').html('<i class="icon-checkmark"></i>Short confirmation message here').appendTo('#email-subscription');
+                });
+            }
+        });
+    }
+};
+
 GS.backgroundVideo = new function() {
     var windowWidth = $(window).width();
     var aspectRatio;
@@ -638,6 +651,7 @@ $(function() {
 
     GS.petitions.petitionsGenerator();
     GS.petitions.modalWindow();
+    GS.forms.emailSubscription();
 
 
     $(window).load(function(){

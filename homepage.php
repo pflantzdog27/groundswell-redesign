@@ -76,13 +76,9 @@
             <header class="col-sm-6">
                 <h2><b>Sign Up</b> for our email alerts</h2>
             </header>
-            <form class="col-sm-6">
-                <div class="form-group col-xs-8">
-                    <label class="sr-only" for="emailInput">Email address</label>
-                    <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
-                </div>
-                <button type="submit" class="col-xs-3 btn gs-btn gs-btn-orange">Submit</button>
-            </form>
+            <div id="email-subscription" class="col-sm-6">
+                <?php include('partials/email-input-form.php');?>
+            </div>
         </div>
     </div>
 </aside>
