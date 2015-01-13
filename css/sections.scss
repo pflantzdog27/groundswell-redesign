@@ -197,3 +197,19 @@
   }
 }
 
+#contact-form {
+    > div {
+      padding: 20px 0;
+        .form-group {
+          padding: 11px 15px;
+          border: 0;
+          input {
+            @include border-radius(3px);
+            text-transform: initial;
+          }
+        }
+        button {
+          @include font-size(50px);
+        }
+    }
+}

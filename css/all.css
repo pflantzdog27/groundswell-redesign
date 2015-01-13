@@ -1359,6 +1359,20 @@ div.vjs-loading-spinner .ball8 {
 #slider-wrapper .carousel-indicators {
   bottom: 0; }
 
+#contact-form > div {
+  padding: 20px 0; }
+  #contact-form > div .form-group {
+    padding: 11px 15px;
+    border: 0; }
+    #contact-form > div .form-group input {
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      text-transform: initial; }
+  #contact-form > div button {
+    font-size: 50px;
+    font-size: 3.125rem; }
+
 #petition-wrap {
   color: #333; }
 

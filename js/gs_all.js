@@ -218,7 +218,7 @@ GS.scrolloramaEffects = new function() {
                     TweenMax.fromTo($(tweeningElement+ ' .company-meta-block:nth-child(1)'), .1 ,
                         {css:{'padding-right' : 15 }, immediateRender:true},
                         {css:{'padding-right' : 0}}),
-                    TweenMax.fromTo($(tweeningElement+ ' .company-meta-block:nth-child(2)'), .1 ,
+                    TweenMax.fromTo($(tweeningElement+ ' #contact-form'), .1 ,
                         {css:{'padding-top' : 15 }, immediateRender:true},
                         {css:{'padding-top' : 0}}),
                     TweenMax.fromTo($(tweeningElement+ ' .large-icon'), .1 ,

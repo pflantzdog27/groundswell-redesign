@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12 company-meta-block">
+            <div class="col-xs-12" id="contact-form">
                 <div style="background: #44aeea; color: #fff;">
                     <div>
                         <?php include('partials/contact-form.php');?>
