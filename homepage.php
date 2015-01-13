@@ -58,8 +58,7 @@
             <div class="section-left-column parallax col-sm-6">
                 <h2 class="section-title">Action</h2>
                 <article>
-                    <p><a href="#"><strong>JOIN</strong></a> or <a href="#"><strong>START</strong></a> your own campaign <span class="blue-background">for
-                        justice</span> inspired by your faith and values.</p>
+                    <p><a href="#"><strong>JOIN</strong></a> or <a href="#"><strong>START</strong></a> your own campaign for justice inspired by your faith and values.</p>
                     <p>We’ve got a <a href="#"><strong>FREE Online Tool</strong></a> Set to help.</p>
                 </article>
                 <button class="btn gs-btn gs-btn-orange">Learn More</button>
