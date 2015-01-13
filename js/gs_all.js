@@ -106,6 +106,7 @@ GS.teamDisplay = new function() {
             teamMember.find('h4').css({color : '#44aeea', 'font-size': '1.1em'});
             teamMember.removeClass('active');
             $(this).find('h4').css({color : '#ea5a3a;', 'font-size': '1.2em'});
+            teamMember.find('img').animate({opacity : 0.7},400);
             $(this).addClass('active');
 
             if($('#team-member-bio').length <= 0) {
@@ -119,10 +120,8 @@ GS.teamDisplay = new function() {
     this.hoverAction = function() {
         teamMember.hover(function() {
             $(this).find('h4').stop().css({'border-top' : '5px solid #ea5a3a', color : '#ea5a3a'});
-            $(this).find('img').stop().animate({opacity : 1},400);
         },function() {
             $(this).find('h4').stop().css({'border-top' : '5px solid #44aeea', color : '#44aeea'});
-            $(this).find('img').stop().animate({opacity : 0.7},400);
         })
     };
 };
