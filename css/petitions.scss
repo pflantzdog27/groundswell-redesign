@@ -12,6 +12,9 @@
     h3 {
       text-transform: uppercase;
       color: #333;
+        @include tablets {
+          @include font-size(25px);
+        }
     }
     #cat-selector {
       margin: 20px 0 10px;
@@ -49,6 +52,10 @@
           float: left;
           display: block;
           background: #fff;
+            @include tablets {
+              @include font-size(16px);
+              margin: 2px;
+            }
         }
     }
 }

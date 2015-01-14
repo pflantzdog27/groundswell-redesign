@@ -1,6 +1,6 @@
 
 
-<form class="row" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="form-inline" role="form" target="hidden_iframe" onsubmit="submitted = true">
+<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="form-inline" role="form" target="hidden_iframe" onsubmit="submitted = true">
     <div class="form-group col-xs-9">
         <label class="sr-only" for="email">Email address</label>
         <input type="email" name="email" class="form-control" id="emailInput" placeholder="Enter your email" required>

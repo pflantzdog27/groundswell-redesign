@@ -1,4 +1,4 @@
-<div class="col-xs-6 col-sm-4 blog-post">
+<div class="col-sm-4 blog-post">
     <article>
         <figure>
             <img class="img-responsive" src="http://placehold.it/500x500" alt="Title">
@@ -21,7 +21,7 @@
         </footer>
     </article>
 </div>
-<div class="col-xs-6 col-sm-4 blog-post">
+<div class="col-sm-4 blog-post">
     <article>
         <figure>
             <img class="img-responsive" src="http://placehold.it/500x500" alt="Title">
@@ -44,7 +44,7 @@
         </footer>
     </article>
 </div>
-<div class="col-xs-6 col-sm-4 blog-post">
+<div class="col-sm-4 blog-post">
     <article>
         <figure>
             <img class="img-responsive" src="http://placehold.it/500x500" alt="Title">

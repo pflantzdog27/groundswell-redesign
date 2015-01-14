@@ -4,7 +4,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-1 col-xs-1" id="social-navigation">
+        <div class="col-sm-1 hidden-xs" id="social-navigation">
             <div class="social-link-column">
                 <ul class="list-unstyled">
                     <li class="facebook"><a href="#"><i class="icon-facebook"></i></a></li>
@@ -13,10 +13,13 @@
                 </ul>
             </div>
         </div>
-        <div class="col-sm-8 col-sm-offset-0 col-xs-11 col-xs-offset-1" id="blog-left-column">
+        <div class="col-sm-8 col-sm-offset-0" id="blog-left-column">
             <header class="single-post-header">
                 <h1>Blog Post Title goes here, over one or two lines of text - here and here and here and here</h1>
             </header>
+            <div class="visible-xs">
+                <?php include('partials/social-share-bar.php');?>
+            </div>
             <section id="blog-video">
                 <div class="row">
                     <div class="author-info col-xs-9">

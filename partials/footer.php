@@ -29,7 +29,7 @@
             </div>
         </div>
         <div id="copyright">
-            <p>&copy;2014 Groundswell, powered by <a href="#">Auburn</a></p>
+            <small>&copy;2014 Groundswell, powered by <a href="#">Auburn</a></small>
         </div>
     </div>
 </footer>

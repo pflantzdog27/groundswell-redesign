@@ -7,7 +7,7 @@
 <header id="intro-section-wrapper">
     <div id="intro-section">
         <!-- video -->
-        <video id="homepage-videoBG" class="video-js hidden-xs" data-setup='{
+        <video id="homepage-videoBG" class="video-js hidden-sm hidden-xs" data-setup='{
                     "controls" : false,
                     "autoplay" : true,
                     "preload" : "auto",
@@ -27,7 +27,7 @@
                     <h1>Inspiring<br> Faithful Action<br> to Heal and<br> Repair the World</h1>
                 </div>
             </div>
-            <span id="playback-control hidden-xs" class="icon-pause"></span>
+            <span id="playback-control" class="icon-pause hidden-xs"></span>
         </div>
 
         <!-- get started button -->
@@ -50,7 +50,7 @@
 </header>
 
 <section id="action" class="content-section" style="color:#44aeea;">
-    <aside class="section-number">
+    <aside class="section-number hidden-xs hidden-sm">
         <span>1</span>
     </aside>
     <div class="container">
@@ -83,7 +83,7 @@
 </aside>
 <!-- TRAININGS -->
 <section id="training" class="coverBG content-section" style="color:#fff; background-image: url(images/training-bg.jpg);">
-    <aside class="section-number">
+    <aside class="section-number hidden-xs hidden-sm">
         <span>2</span>
     </aside>
     <div class="container">
@@ -107,7 +107,7 @@
 </section>
 
 <section id="inspiration" class="coverBG content-section" style="color:#fff; background-image: url(images/inspiration.jpg);">
-    <aside class="section-number">
+    <aside class="section-number hidden-xs hidden-sm">
         <span>3</span>
     </aside>
     <div class="container">

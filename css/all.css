@@ -277,8 +277,8 @@ Extenders
       font-size: 4.375rem; } }
   @media only screen and (max-width: 768px) {
     #intro-section #hero .container h1, .page-header h1, .jumbotron h1 {
-      font-size: 60px;
-      font-size: 3.75rem; } }
+      font-size: 50px;
+      font-size: 3.125rem; } }
 
 #intro-section #hero .container h2, .page-header h2, .jumbotron h2 {
   font-size: 40px;
@@ -1234,21 +1234,27 @@ body.vjs-full-window {
   text-align: center;
   padding: 20px 0; }
   .section-breaker h2 {
-    font-size: 50px;
-    font-size: 3.125rem;
     padding: 0;
     margin: 0;
     color: #fff;
+    line-height: 1.75;
+    font-size: 45px;
+    font-size: 2.8125rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 1200px) {
+      .section-breaker h2 {
+        font-size: 40px;
+        font-size: 2.5rem; } }
     @media only screen and (max-width: 992px) {
       .section-breaker h2 {
-        font-size: 45px;
-        font-size: 2.8125rem; } }
+        font-size: 35px;
+        font-size: 2.1875rem; } }
     @media only screen and (max-width: 768px) {
       .section-breaker h2 {
         font-size: 30px;
         font-size: 1.875rem;
-        padding-bottom: 10px; } }
+        padding-bottom: 10px;
+        line-height: 1; } }
   .section-breaker button {
     text-transform: uppercase; }
   .section-breaker .form-group {
@@ -1363,6 +1369,10 @@ body.vjs-full-window {
   .groundswell-campaigns h3 {
     text-transform: uppercase;
     color: #333; }
+    @media only screen and (max-width: 768px) {
+      .groundswell-campaigns h3 {
+        font-size: 25px;
+        font-size: 1.5625rem; } }
   .groundswell-campaigns #cat-selector {
     margin: 20px 0 10px;
     font-weight: 300;
@@ -1401,6 +1411,11 @@ body.vjs-full-window {
       float: left;
       display: block;
       background: #fff; }
+      @media only screen and (max-width: 768px) {
+        .groundswell-campaigns #cat-list li {
+          font-size: 16px;
+          font-size: 1rem;
+          margin: 2px; } }
 
 .petition-widget {
   border: 1px solid #eaeaea;
@@ -2653,6 +2668,9 @@ body.vjs-full-window {
   @media only screen and (max-width: 992px) {
     #team-graphic li {
       max-width: 33.33%; } }
+  @media only screen and (max-width: 768px) {
+    #team-graphic li {
+      max-width: 50%; } }
   #team-graphic li header {
     text-align: center;
     cursor: pointer; }
@@ -2795,16 +2813,15 @@ body.vjs-full-window {
   padding-bottom: 60px;
   position: relative; }
   #column-buckets article header {
-    background: #ea5a3a;
     margin-top: 20px; }
     #column-buckets article header h2 {
-      color: #fff;
+      color: #333;
       text-align: center;
       text-transform: uppercase;
       margin: 0;
       padding-top: 10px;
       padding-bottom: 10px;
-      font-weight: 300; }
+      font-weight: 700; }
   #column-buckets article .bucket-content {
     margin-top: 15px;
     margin-bottom: 15px; }
@@ -3114,8 +3131,6 @@ body.vjs-full-window {
     color: #666;
     padding: 15px 0;
     margin-top: 20px; }
-    #footer #copyright p {
-      margin: 0; }
 
 /* gs bootstrap */
 body {
@@ -3455,3 +3470,5 @@ form {
       position: absolute;
       right: 0;
       top: 0; }
+    form .form-group #emailInput {
+      width: 100%; }

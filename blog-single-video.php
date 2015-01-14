@@ -30,14 +30,7 @@
                     </div>
                 </div>
                 <article class="blog-post-full">
-                    <div class="social-link-bar">
-                        <ul class="list-unstyled col-sm-8 col-sm-offset-2">
-                            <li class="facebook col-xs-4"><a href="#"><i class="icon-facebook"></i> Facebook</a></li>
-                            <li class="twitter col-xs-4"><a href="#"><i class="icon-twitter"></i> Twitter</a></li>
-                            <li class="email col-xs-4"><a href="#"><i class="icon-mail"></i> Email</a></li>
-                        </ul>
-                        <div class="clearfix"></div>
-                    </div>
+                    <?php include('partials/social-share-bar.php');?>
 
                     <!-- video embed -->
                     <div class="embed-responsive embed-responsive-16by9" id="video-content">
@@ -46,14 +39,7 @@
 
                     <p class="outro">Optional outro. Growing up in a small Baptist church in Texas, I'm used to faith making me laugh, cry, feel God's love, and want to dance. Coincidentally, all these posts do that too. Click, enjoy and share.</p>
 
-                    <div class="social-link-bar">
-                        <ul class="list-unstyled col-sm-8 col-sm-offset-2">
-                            <li class="facebook col-xs-4"><a href="#"><i class="icon-facebook"></i> Facebook</a></li>
-                            <li class="twitter col-xs-4"><a href="#"><i class="icon-twitter"></i> Twitter</a></li>
-                            <li class="email col-xs-4"><a href="#"><i class="icon-mail"></i> Email</a></li>
-                        </ul>
-                        <div class="clearfix"></div>
-                    </div>
+                    <?php include('partials/social-share-bar.php');?>
                 </article>
                 <footer class="row">
                     <div class="col-sm-12">

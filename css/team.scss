@@ -7,6 +7,9 @@
       @include desktops {
         max-width: 33.33%;
       }
+      @include tablets {
+        max-width: 50%;
+      }
       header {
         text-align: center;
         cursor: pointer;

@@ -29,7 +29,7 @@
     <div class="container">
         <div class="row">
             <article class="col-sm-12 col-md-4">
-                <header>
+                <header style="background: url(images/action.svg) no-repeat 0 0;">
                     <h2>Action</h2>
                 </header>
                 <div class="bucket-content">
@@ -42,7 +42,7 @@
                 </footer>
             </article>
             <article class="col-sm-12 col-md-4">
-                <header>
+                <header style="background: url(images/trainings.svg) no-repeat 50% 0;">
                     <h2>Trainings</h2>
                 </header>
                 <div class="bucket-content">
@@ -54,7 +54,7 @@
                 </footer>
             </article>
             <article class="col-sm-12 col-md-4">
-                <header>
+                <header style="background: url(images/inspiration.svg) no-repeat 50% 0;">
                     <h2>Inspiration</h2>
                 </header>
                 <div class="bucket-content">

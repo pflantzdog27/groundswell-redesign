@@ -13,5 +13,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.css">
     <title>GS</title>
+    <script src="//cdn.optimizely.com/js/317810835.js"></script>
     <script src="js/modernizr-2.6.2.min.js"></script>
 </head>

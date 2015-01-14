@@ -6,30 +6,30 @@
 
     <div class="carousel-inner" role="listbox">
         <div class="item active" id="carousel-id-1">
-            <figure class="col-xs-3">
+            <figure class="col-sm-3">
                <img class="img-responsive" src="http://placehold.it/400x300" alt="Title">
             </figure>
-            <figure class="col-xs-3">
+            <figure class="col-sm-3">
                 <img class="img-responsive" src="http://placehold.it/400x300" alt="Title">
             </figure>
-            <figure class="col-xs-3">
+            <figure class="col-sm-3">
                 <img class="img-responsive" src="http://placehold.it/400x300" alt="Title">
             </figure>
-            <figure class="col-xs-3">
+            <figure class="col-sm-3">
                 <img class="img-responsive" src="http://placehold.it/400x300" alt="Title">
             </figure>
         </div>
         <div class="item" id="carousel-id-2">
-            <figure class="col-xs-3">
+            <figure class="col-sm-3">
                 <img class="img-responsive" src="http://placehold.it/400x300" alt="Title">
             </figure>
-            <figure class="col-xs-3">
+            <figure class="col-sm-3">
                 <img class="img-responsive" src="http://placehold.it/400x300" alt="Title">
             </figure>
-            <figure class="col-xs-3">
+            <figure class="col-sm-3">
                 <img class="img-responsive" src="http://placehold.it/400x300" alt="Title">
             </figure>
-            <figure class="col-xs-3">
+            <figure class="col-sm-3">
                 <img class="img-responsive" src="http://placehold.it/400x300" alt="Title">
             </figure>
         </div>

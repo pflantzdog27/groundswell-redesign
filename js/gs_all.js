@@ -110,9 +110,9 @@ GS.teamDisplay = new function() {
     this.clickAction = function() {
         teamMember.click(function() {
             var hiddenHtml = $(this).find('.hidden').html();
-            teamMember.find('h4').css({color : '#44aeea', 'font-size': '1.1em'});
+            teamMember.find('h4').css({color : '#44aeea'});
             teamMember.removeClass('active');
-            $(this).find('h4').css({color : '#ea5a3a;', 'font-size': '1.2em'});
+            $(this).find('h4').css({color : '#ea5a3a;'});
             teamMember.find('img').animate({opacity : 0.7},400);
             $(this).addClass('active');
 
@@ -324,8 +324,8 @@ GS.scrolloramaEffects = new function() {
             (new TimelineLite())
                 .append([
                     TweenMax.fromTo($('#column-buckets article header'), 1,
-                        {css: {'margin-top': 20 }, immediateRender: true},
-                        {css: {'margin-top': 0}}),
+                        {css: {'padding-top': 5, 'padding-bottom' : 5 }, immediateRender: true},
+                        {css: {'padding-top': 20, 'padding-bottom' : 20}}),
                     TweenMax.fromTo($('#column-buckets article header h2'),.5,
                         {css: {'font-weight': 300 }, immediateRender: true},
                         {css: {'font-weight': 700}})
