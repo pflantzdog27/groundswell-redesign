@@ -20,10 +20,6 @@
             <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
         </video>
 
-        <div class="visible-xs">
-            Testing this.
-        </div>
-
         <!-- hero message -->
         <div id="hero">
             <div class="container">
@@ -31,7 +27,7 @@
                     <h1>Inspiring<br> Faithful Action<br> to Heal and<br> Repair the World</h1>
                 </div>
             </div>
-            <span id="playback-control" class="icon-pause"></span>
+            <span id="playback-control hidden-xs" class="icon-pause"></span>
         </div>
 
         <!-- get started button -->

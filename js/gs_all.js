@@ -65,18 +65,11 @@ GS.forms = new function() {
 };
 
 GS.backgroundVideo = new function() {
-    var windowWidth = $(window).width();
-    var aspectRatio;
     this.sizingFunction = function() {
         var videoID = 'homepage-videoBG';
         _V_(videoID).ready(function(){
-
             var myPlayer = videojs(videoID);
-            if (windowWidth < 768) {
-                aspectRatio = 4/6;
-            } else {
-                aspectRatio = 4/9.4;
-            }
+            var aspectRatio = 4/9.4;
             var width = document.getElementById(videoID).parentElement.offsetWidth;
             myPlayer.width(width).height( width * aspectRatio );
             $('#hero').find('.container').height(width * aspectRatio);
@@ -87,6 +80,7 @@ GS.backgroundVideo = new function() {
             }
             window.onresize = resizeVideoJS;
 
+            // end of video function
             this.on("ended", function(){
                 myPlayer.pause();
                 myPlayer.posterImage.show();
@@ -548,6 +542,10 @@ GS.carousel = new function() {
 
 };
 
+/* ===========================================
+    DOCUMENT READY FUNCTIONS
+ // ========================================== */
+
 $(function() {
 
     var bodyClass = $('body').attr('class');
@@ -557,7 +555,9 @@ $(function() {
 
     if(bodyClass == 'home') { // JUST THE HOME
         GS.navigation.navigateDown();
-        GS.backgroundVideo.sizingFunction();
+        if($(window).width() > 768) {
+            GS.backgroundVideo.sizingFunction();
+        };
         GS.teamDisplay.clickAction();
         GS.teamDisplay.hoverAction();
 

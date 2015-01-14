@@ -15,6 +15,15 @@
     left: 0;
     right: 0;
     background: rgba(0,0,0,0.4);
+      @include tablets {
+        @include coverBG();
+        background-image: url(../images/training-bg.jpg);
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        min-height: 400px;
+      }
       .container {
         @include flexbox;
         @include flexdirection(row);

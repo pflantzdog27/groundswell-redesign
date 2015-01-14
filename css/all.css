@@ -325,6 +325,7 @@ Extenders
 .collapse.in {
   position: absolute;
   top: 0;
+  bottom: 0;
   width: 190px;
   padding: 15px 25px;
   margin: 0;
@@ -346,7 +347,8 @@ Extenders
       margin: 0;
       z-index: 10;
       border: 0;
-      background: #44aeea; } }
+      background: #44aeea;
+      min-height: 100%; } }
   #primary-navigation ul {
     margin: 0; }
     @media only screen and (max-width: 768px) {
@@ -1081,6 +1083,20 @@ body.vjs-full-window {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.4); }
+    @media only screen and (max-width: 768px) {
+      #intro-section #hero {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url(../images/training-bg.jpg);
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        min-height: 400px; } }
     #intro-section #hero .container {
       display: -webkit-box;
       display: -moz-box;
