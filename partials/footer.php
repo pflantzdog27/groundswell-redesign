@@ -40,7 +40,7 @@
 
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/videojs-3.2.0.js"></script>
+    <script src="js/videojs.min.4.11.2.js"></script>
     <script src="js/jquery.superscrollorama.js"></script>
     <script src="js/TweenMax.min.js"></script>
     <script src="js/moment.min.js"></script>

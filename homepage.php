@@ -7,7 +7,7 @@
 <header id="intro-section-wrapper">
     <div id="intro-section">
         <!-- video -->
-        <video id="homepage-videoBG" class="video-js" data-setup='{
+        <video id="homepage-videoBG" class="video-js hidden-xs" data-setup='{
                     "controls" : false,
                     "autoplay" : true,
                     "preload" : "auto",
@@ -19,6 +19,10 @@
             <source src="video/homepageBanner.mp4" type='video/ogg' />
             <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
         </video>
+
+        <div class="visible-xs">
+            Testing this.
+        </div>
 
         <!-- hero message -->
         <div id="hero">
@@ -81,7 +85,6 @@
         </div>
     </div>
 </aside>
-
 <!-- TRAININGS -->
 <section id="training" class="coverBG content-section" style="color:#fff; background-image: url(images/training-bg.jpg);">
     <aside class="section-number">

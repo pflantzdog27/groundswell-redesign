@@ -71,25 +71,25 @@ GS.backgroundVideo = new function() {
         var videoID = 'homepage-videoBG';
         _V_(videoID).ready(function(){
 
-            var myPlayer = this;
+            var myPlayer = videojs(videoID);
             if (windowWidth < 768) {
                 aspectRatio = 4/6;
             } else {
                 aspectRatio = 4/9.4;
             }
-            var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
+            var width = document.getElementById(videoID).parentElement.offsetWidth;
             myPlayer.width(width).height( width * aspectRatio );
             $('#hero').find('.container').height(width * aspectRatio);
 
             function resizeVideoJS(){
-                var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
+                var width = document.getElementById(videoID).parentElement.offsetWidth;
                 myPlayer.width(width).height( width * aspectRatio );
             }
             window.onresize = resizeVideoJS;
 
-            // when video finishes
-            this.addEvent("ended", function(){
+            this.on("ended", function(){
                 myPlayer.pause();
+                myPlayer.posterImage.show();
                 $('#playback-control').removeClass('icon-pause').addClass('icon-play');
                 isPlaying = false;
             });
