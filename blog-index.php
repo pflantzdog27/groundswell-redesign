@@ -44,11 +44,11 @@
     </div>
 </section>
 
-<aside class="section-breaker" style="background: #ea5a3a;">
+<aside class="section-breaker" style="background: #fff;">
     <div class="container">
         <div class="row">
             <header class="col-sm-12">
-                <button class="btn gs-btn-white col-sm-offset-3 col-sm-6">Load More Posts</button>
+                <button class="btn gs-btn-orange col-sm-offset-3 col-sm-6">Load More Posts</button>
             </header>
         </div>
     </div>

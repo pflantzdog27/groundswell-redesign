@@ -81,14 +81,7 @@
         <div>
             <h2 class="section-title">Receive regular digests of the best faithful stuff on the internet</h2>
             <div>
-                <div class="social-link-bar parallax">
-                    <ul class="list-unstyled row">
-                        <li class="facebook col-sm-4"><a href="#"><i class="icon-facebook"></i> Facebook</a></li>
-                        <li class="twitter col-sm-4"><a href="#"><i class="icon-twitter"></i> Twitter</a></li>
-                        <li class="email col-sm-4"><a href="#"><i class="icon-mail"></i> Email</a></li>
-                    </ul>
-                    <div class="clearfix"></div>
-                </div>
+               <?php include('partials/social-share-bar.php'); ?>
             </div>
         </div>
     </div>

@@ -108,6 +108,9 @@ button:active {
     &:hover {
       background: rgba(0,0,0,1);
     }
+    @include tablets {
+      @include font-size(40px);
+    }
 }
 
 .section-title {

@@ -11,7 +11,7 @@
                 <img class="img-responsive" src="http://placehold.it/50x50" alt="Author Name">
             </figure>
             <div class="author-name">
-                <h5>First Name <br> Last Name</h5>
+                <h5>Jonathon Sanders</h5>
             </div>
         </div>
         <p>Growing up in a small Baptist church in Texas, I'm used to faith making me laugh, cry, feel God's love, and want to dance. Coincidentally, all these posts do that too. Click, enjoy and share.</p>
@@ -34,7 +34,7 @@
                 <img class="img-responsive" src="http://placehold.it/50x50" alt="Author Name">
             </figure>
             <div class="author-name">
-                <h5>First Name <br> Last Name</h5>
+                <h5>Jonathon Sanders</h5>
             </div>
         </div>
         <p>Growing up in a small Baptist church in Texas, I'm used to faith making me laugh, cry, feel God's love, and want to dance. Coincidentally, all these posts do that too. Click, enjoy and share.</p>
@@ -57,7 +57,7 @@
                 <img class="img-responsive" src="http://placehold.it/50x50" alt="Author Name">
             </figure>
             <div class="author-name">
-                <h5>First Name <br> Last Name</h5>
+                <h5>Jonathon Sanders</h5>
             </div>
         </div>
         <p>Growing up in a small Baptist church in Texas, I'm used to faith making me laugh, cry, feel God's love, and want to dance. Coincidentally, all these posts do that too. Click, enjoy and share.</p>

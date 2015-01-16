@@ -76,14 +76,30 @@
 //STRUCTURE
 .single-post-header {
   padding: 75px 0 40px;
+    @include tablets {
+      padding-bottom: 20px;
+    }
     h1 {
       color: $gsBlue;
       font-weight: 700;
     }
 }
+.author-name {
+  @include flexbox;
+  @include flexAlignItems(flex-start);
+  @include flexdirection(column);
+  height: 50px;
+    b {
+      padding-left: 10px;
+    }
+}
 
 #right-sidebar {
-  padding: 90px 0 40px 15px;
+  padding: 90px 15px 40px 15px;
+    @include tablets {
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
     .sidebar-widget {
       margin-bottom: 30px;
         .widget-title {
@@ -108,15 +124,13 @@
   color: $gsBlue;
 }
 #curator-info-block {
-  min-height: 200px;
+  min-height: 150px;
     figure {
       position: relative;
-      height: 200px;
+      height: 150px;
       display: block;
         img {
-          position: absolute;
-          bottom: 0;
-          max-height: 200px;
+          border: 3px solid #eaeaea;
         }
     }
     h1, p {

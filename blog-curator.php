@@ -5,12 +5,12 @@
 <header class="page-header">
     <div class="container">
         <div class="row" id="curator-info-block">
-            <div class="col-sm-3">
+            <div class="col-sm-2 col-xs-4">
                 <figure>
                     <img src="images/esther.jpg" alt="Esther" class="img-responsive img-circle">
                 </figure>
             </div>
-            <div class="col-sm-9">
+            <div class="col-sm-10 col-xs-8">
                 <h1>Esther Mere&#324;o</h1>
                 <div class="contact-curator">
                     <a href="#"><i class="icon-facebook"></i>Facebook</a>
@@ -32,11 +32,11 @@
 </section>
 
 
-<aside class="section-breaker" style="background: #ea5a3a;">
+<aside class="section-breaker" style="background: #fff;">
     <div class="container">
         <div class="row">
             <header class="col-sm-12">
-                <button class="btn gs-btn-white col-sm-offset-3 col-sm-6">Load More Posts</button>
+                <button class="btn gs-btn-orange col-sm-offset-3 col-sm-6">Load More Posts</button>
             </header>
         </div>
     </div>

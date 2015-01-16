@@ -97,7 +97,7 @@
             </div>
             <div class="section-overlay">
                 <article>
-                    <span class="icon-comment"></span>
+                    <span class="icon-comment hidden-xs"></span>
                     <p>Isaac’s training on organizing in a modern age helped us grapple with how to integrate digital strategies with on-the-ground organizing. The Jewish Organizing Fellows loved Isaac’s <span class="blue-background">interactive exercises</span> and his <span class="blue-background">real world stories</span> of successful online organizing campaigns.</p>
                     <footer>—<strong>Aliza Levine</strong>, JOIN for Justice</footer>
                 </article>

@@ -68,9 +68,7 @@
   background: #fff;
   @include box-shadow(0 8px 12px -8px, gray);
     .item {
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 10px;
+      padding: 10px;
       margin: 0;
       border-bottom: 1px solid rgba(0,0,0,0.2);
         h4 {

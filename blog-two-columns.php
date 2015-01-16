@@ -22,16 +22,14 @@
             </div>
             <section id="blog-video">
                 <div class="row">
-                    <div class="author-info col-xs-9">
+                    <div class="author-info">
                         <figure>
                             <img class="img-responsive" src="http://placehold.it/50x50" alt="Author Name">
                         </figure>
                         <div class="author-name">
-                            <h4>First Name <br> Last Name</h4>
+                            <h4>Liam Tolstoyski</h4>
+                            <b>October 9 2014</b>
                         </div>
-                    </div>
-                    <div class="col-xs-3">
-                        <b>October 9 2014</b>
                     </div>
                 </div>
                 <article class="blog-post-full">

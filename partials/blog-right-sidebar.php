@@ -2,7 +2,7 @@
     <div class="sidebar-widget">
         <div class="select-menu">
             <div class="select-box">
-                <h5>Category <span>Default Category</span> <b class="icon-arrow-down"></b></h5>
+                <h5>Cat<span>Category</span> <b class="icon-arrow-down"></b></h5>
             </div>
             <div class="select-options scroll-area">
                 <ul class="list-unstyled ">
@@ -35,7 +35,7 @@
         </ul>
     </div>
 
-    <div class="sidebar-widget">
+    <div class="sidebar-widget hidden-xs">
         <h2 class="widget-title">Archive:</h2>
         <p>Wordpress will spit out some markup for this section and then I will style it.</p>
     </div>

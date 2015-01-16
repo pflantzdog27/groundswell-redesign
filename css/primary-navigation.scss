@@ -56,10 +56,21 @@
           display: block;
           background: $gsBlue;
           border-bottom: 1px solid #eaeaea;
+            &.orange-bg {
+              background: $gsOrange;
+            }
         }
         a {
           color: #fff;
           display: block;
+            @include tablets {
+              &:hover {
+                color: #fff;
+              }
+            }
+        }
+        &.darker-blue-bg {
+          background: #8B8EEA;
         }
       }
     }

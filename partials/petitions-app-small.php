@@ -14,7 +14,7 @@
         <script id="petitionsLayout" type="text/html">
             {{#.}}
                 <div class="item row" id="petitionID-{{index}}">
-                    <figure class="col-xs-4 col-sm-3">
+                    <figure class="col-xs-12 col-sm-3">
                         <img class="img-responsive" src="{{image}}" alt="{{title}}">
                         <figcaption class="progress">
                             <div class="progress-bar status-bar"  role="progressbar" aria-valuenow="{{ percent }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ percent }}%">
@@ -23,7 +23,7 @@
                             <span><b>{{signatures}}</b> of {{goal}}</span>
                         </figcaption>
                     </figure>
-                    <div class="col-xs-8 col-sm-9">
+                    <div class="col-xs-12 col-sm-9">
                         <h4><a href="{{url}}" target="_blank">{{title}}</a></h4>
                         <footer class="petition-meta-info">
                             <small>Created by: <b>{{creator}}</b></small>

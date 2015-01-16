@@ -25,7 +25,7 @@
                             <img class="img-responsive" src="http://placehold.it/50x50" alt="Author Name">
                         </figure>
                         <div class="author-name">
-                            <h4>First Name <br> Last Name</h4>
+                            <h4>Juanita Rodriquez</h4>
                         </div>
                     </div>
                 </div>
@@ -49,15 +49,16 @@
                 </footer>
             </div>
             <div class="recent-article-sidebar col-sm-3">
+                <h2 class="section-title visible-xs">More Inspiration</h2>
                 <?php include('partials/column-blog-posts-short.php'); ?>
             </div>
         </div>
     </div>
 </section>
 
-<section id="blog" class="content-section">
+<section id="blog" class="content-section hidden-xs">
     <div class="container">
-        <h2 class="section-title">Other Inspiration</h2>
+        <h2 class="section-title">More Inspiration</h2>
         <div class="section-template parallax three-column-section row">
             <?php include('partials/row-blog-posts-short.php');?>
             <?php include('partials/row-blog-posts-short.php');?>
@@ -65,11 +66,11 @@
     </div>
 </section>
 
-<aside class="section-breaker" style="background: #ea5a3a;">
+<aside class="section-breaker" style="background: #fff;">
     <div class="container">
         <div class="row">
             <header class="col-sm-12">
-                <button class="btn gs-btn-white col-sm-offset-3 col-sm-6">Load More Posts</button>
+                <button class="btn gs-btn-orange col-sm-offset-3 col-sm-6">Load More Posts</button>
             </header>
         </div>
     </div>
