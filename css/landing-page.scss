@@ -64,15 +64,15 @@
     li {
       position: absolute;
       top: 50%;
-      left: 230px;
+      left: 40%;
       margin-left: -20px;
       margin-top: -20px;
         &:first-child {
-          left: 65px;
+          left: 12%;
           margin-left: 0;
         }
         &:last-child {
-          left: 365px;
+          left: 60%;
           margin-left: 0;
         }
         h4 {
@@ -111,6 +111,9 @@
     border-right: 2px solid $gsOrange;
     padding-bottom: 60px;
     position: relative;
+    @include tablets {
+      border-right: 0;
+    }
     header {
       margin-top: 20px;
       h2 {
@@ -141,5 +144,11 @@
       border-right: 0;
     }
   }
+}
+
+#contact {
+    .form-group {
+      margin-bottom: 15px;
+    }
 }
 

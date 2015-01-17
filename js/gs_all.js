@@ -560,7 +560,6 @@ $(function() {
     var bodyClass = $('body').attr('class');
 
     GS.navigation.searchDisplay();
-    GS.navigation.backToTop();
 
     if(bodyClass == 'home') { // JUST THE HOME
         GS.navigation.navigateDown();
@@ -569,6 +568,7 @@ $(function() {
         };
         GS.teamDisplay.clickAction();
         GS.teamDisplay.hoverAction();
+        GS.navigation.backToTop();
 
         //scrollorama
         GS.scrolloramaEffects.mainNavBackground();

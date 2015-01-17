@@ -65,6 +65,7 @@ strong {
   font-weight: 700;
   margin-top: 0;
   line-height: 1.6;
+  padding: 7px 12px;
 }
 .gs-btn-blue {
   background: $gsBlue;
@@ -73,7 +74,7 @@ strong {
 .gs-btn-orange {
   background: $gsOrange;
   color: #fff;
-    &:hover {
+    &:hover, a:hover {
       color: #333!important;
     }
 }
@@ -367,10 +368,9 @@ button:active {
 // SEARCH
 form {
   width:100%;
-  margin-top: 4px;
   .form-group {
     margin: 0;
-    padding: 0;
+    padding: 1px 0;
     position: relative;
     border: 1px solid #eaeaea;
     input {
@@ -378,6 +378,7 @@ form {
       @include border-radius(0);
       text-transform: uppercase;
       border: 0;
+      box-shadow: none;
     }
     button {
       position: absolute;

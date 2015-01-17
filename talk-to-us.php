@@ -12,12 +12,16 @@
     </div>
 </header>
 
-<section class="content-section no-border">
+
+<section id="contact" class="content-section" style="color:#44aeea;">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-6 company-meta-block">
-                <div style="background: #ea5a3a; color: #fff;">
-                    <span class="large-icon icon-location"></span>
+        <div class="section-template two-column-section row">
+            <div class="section-left-column parallax col-sm-6">
+                <?php include('partials/contact-form.php');?>
+            </div>
+            <div class="section-right-column col-sm-6" id="petition-wrap">
+                <div class="col-sm-12">
+                    <h2>212 870 3177</h2>
                     <div class="vcard">
                         <h2>Groundswell</h2>
                         <div class="adr">
@@ -28,26 +32,11 @@
                     </div>
                 </div>
             </div>
-            <div class="company-meta-block col-xs-6">
-                <div style="background: #fff; color: #44aeea;">
-                    <span class="large-icon icon-phone"></span>
-                    <div>
-                        <h2>212 870 3177</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12" id="contact-form">
-                <div style="background: #44aeea; color: #fff;">
-                    <div>
-                        <?php include('partials/contact-form.php');?>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
+
+
 
 
 

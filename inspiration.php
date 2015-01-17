@@ -66,8 +66,8 @@
                             </div>
                         </li>
                     </ul>
-                    <span class="connecting-line" style="left: 150px;"></span>
-                    <span class="connecting-line" style="left: 300px;"></span>
+                    <span class="hidden-xs connecting-line" style="left: 150px;"></span>
+                    <span class="hidden-xs connecting-line" style="left: 300px;"></span>
                 </div>
             </div>
             <p>And while we can't take all the credit, we don't think it's a coincidence that a few days later, SNL had <a href="#"><b>this HILARIOUS parody</b></a> of Senate Chaplain Barry Black praying away the government shutdown.</p>
@@ -80,8 +80,15 @@
     <div class="container">
         <div>
             <h2 class="section-title">Receive regular digests of the best faithful stuff on the internet</h2>
-            <div>
-               <?php include('partials/social-share-bar.php'); ?>
+            <div class="social-link-bar row">
+                <div class="col-sm-6">
+                    <?php include('partials/email-input-form.php');?>
+                </div>
+                <ul class="list-unstyled col-sm-6">
+                    <li class="facebook col-xs-6"><a href="#"><i class="icon-facebook"></i><span class="hidden-xs"> Like Us</span></a></li>
+                    <li class="twitter col-xs-6"><a href="#"><i class="icon-twitter"></i><span class="hidden-xs"> Follow Us</span></a></li>
+                </ul>
+                <div class="clearfix"></div>
             </div>
         </div>
     </div>
@@ -93,13 +100,7 @@
             <header class="col-sm-6">
                 <h2><b>Sign Up</b> for our email alerts</h2>
             </header>
-            <form class="col-sm-6">
-                <div class="form-group col-xs-8">
-                    <label class="sr-only" for="emailInput">Email address</label>
-                    <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
-                </div>
-                <button type="submit" class="col-xs-3 btn gs-btn gs-btn-orange">Submit</button>
-            </form>
+            <?php include('partials/email-input-form.php');?>
         </div>
     </div>
 </aside>
@@ -114,13 +115,7 @@
                 </article>
             </div>
             <div class="section-right-column col-sm-5">
-                <form>
-                    <div class="form-group col-xs-8">
-                        <label class="sr-only" for="emailInput">Email address</label>
-                        <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
-                    </div>
-                    <button type="submit" class="col-xs-3 btn gs-btn gs-btn-orange">Submit</button>
-                </form>
+                <button class="btn gs-btn gs-btn-orange col-sm-8"><a href="#"><i class="icon-mail"></i> Email</a></button>
             </div>
         </div>
     </div>

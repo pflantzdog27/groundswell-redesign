@@ -2809,14 +2809,14 @@ body.vjs-full-window {
   #stats li {
     position: absolute;
     top: 50%;
-    left: 230px;
+    left: 40%;
     margin-left: -20px;
     margin-top: -20px; }
     #stats li:first-child {
-      left: 65px;
+      left: 12%;
       margin-left: 0; }
     #stats li:last-child {
-      left: 365px;
+      left: 60%;
       margin-left: 0; }
     #stats li h4 {
       color: #fff;
@@ -2843,6 +2843,9 @@ body.vjs-full-window {
   border-right: 2px solid #ea5a3a;
   padding-bottom: 60px;
   position: relative; }
+  @media only screen and (max-width: 768px) {
+    #column-buckets article {
+      border-right: 0; } }
   #column-buckets article header {
     margin-top: 20px; }
     #column-buckets article header h2 {
@@ -2866,6 +2869,9 @@ body.vjs-full-window {
       width: 60%; }
   #column-buckets article:last-child {
     border-right: 0; }
+
+#contact .form-group {
+  margin-bottom: 15px; }
 
 .modal h4 {
   font-weight: 300;
@@ -3150,19 +3156,22 @@ body.vjs-full-window {
       color: #fff;
       text-transform: uppercase;
       font-weight: 700; }
-    #footer #contact-info li a {
-      color: #eaeaea;
-      padding: 5px 0;
-      position: relative;
-      display: block;
-      padding-left: 30px; }
-      #footer #contact-info li a i {
-        position: absolute;
-        top: 9px;
-        left: 0; }
-    #footer #contact-info li:first-child a {
-      display: inline-block;
-      padding: 0; }
+    #footer #contact-info li {
+      color: #eaeaea; }
+      #footer #contact-info li a {
+        padding: 5px 0;
+        position: relative;
+        display: block;
+        padding-left: 30px; }
+        #footer #contact-info li a i {
+          position: absolute;
+          top: 9px;
+          left: 0; }
+      #footer #contact-info li:first-child {
+        padding-bottom: 10px; }
+        #footer #contact-info li:first-child a {
+          display: inline-block;
+          padding: 0; }
   #footer #copyright {
     color: #666;
     padding: 15px 0;
@@ -3219,7 +3228,8 @@ strong {
   text-transform: uppercase;
   font-weight: 700;
   margin-top: 0;
-  line-height: 1.6; }
+  line-height: 1.6;
+  padding: 7px 12px; }
 
 .gs-btn-blue {
   background: #44aeea;
@@ -3228,7 +3238,7 @@ strong {
 .gs-btn-orange {
   background: #ea5a3a;
   color: #fff; }
-  .gs-btn-orange:hover {
+  .gs-btn-orange:hover, .gs-btn-orange a:hover {
     color: #333333 !important; }
 
 .gs-btn-white {
@@ -3492,11 +3502,10 @@ button:active {
         background: #eaeaea; }
 
 form {
-  width: 100%;
-  margin-top: 4px; }
+  width: 100%; }
   form .form-group {
     margin: 0;
-    padding: 0;
+    padding: 1px 0;
     position: relative;
     border: 1px solid #eaeaea; }
     form .form-group input {
@@ -3505,7 +3514,8 @@ form {
       -moz-border-radius: 0;
       border-radius: 0;
       text-transform: uppercase;
-      border: 0; }
+      border: 0;
+      box-shadow: none; }
     form .form-group button {
       position: absolute;
       right: 0;

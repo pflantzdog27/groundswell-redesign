@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6" id="contact-info">
-                <figure class="col-xs-6 col-sm-6">
+                <figure class="col-xs-8 col-sm-6">
                     <img class="img-responsive" src="images/logo.svg" alt="Groundswell Logo">
                 </figure>
                 <div class="clearfix"></div>
