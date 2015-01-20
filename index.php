@@ -1,7 +1,7 @@
 <?php include('partials/header.php');?>
     <body>
     <div class="container">
-        <h4>Last Updated: <strong>Wednesday, 1/14/2015</strong></h4>
+        <h4>Last Updated: <strong>Tuesday, 1/20/2015</strong></h4>
         <table class="table table-striped">
             <thead>
             <tr>
