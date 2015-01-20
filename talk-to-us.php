@@ -19,7 +19,7 @@
             <div class="section-left-column parallax col-sm-6">
                 <?php include('partials/contact-form.php');?>
             </div>
-            <div class="section-right-column col-sm-6" id="petition-wrap">
+            <div class="section-right-column col-sm-6">
                 <div class="col-sm-12">
                     <h2>212 870 3177</h2>
                     <div class="vcard">

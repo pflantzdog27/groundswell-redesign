@@ -173,8 +173,8 @@ GS.scrolloramaEffects = new function() {
                         {css: {bottom: 0}, immediateRender: true},
                         {css: {bottom: -100}}),
                     TweenMax.fromTo($('#sub-intro-section'), 1,
-                        {css: {'padding-top': 100}, immediateRender: true},
-                        {css: {'padding-top': 70}}),
+                        {css: {'padding-top': 75}, immediateRender: true},
+                        {css: {'padding-top': 50}}),
                     TweenMax.fromTo($('#back-top'), 1,
                         {css: {opacity: 0}, immediateRender: true},
                         {css: {opacity: 1}})
@@ -600,7 +600,7 @@ $(function() {
             GS.sectionHacks.evenLengthColumns();
         }
         GS.scrolloramaEffects.parallax('#slider-wrapper');
-        GS.scrolloramaEffects.columnSections();
+        //GS.scrolloramaEffects.columnSections();
         GS.carousel.carouselInit('#full-width-slider');
         GS.carousel.toggleTextDisplay();
     }
@@ -689,6 +689,8 @@ $(function() {
             $('#primary-navigation').removeClass('menu-expanded');
         }
     })
+
+
 
 
 

@@ -86,9 +86,6 @@
         }
     }
 }
-.social-link-bar {
-
-}
 
 #submit-articles {
   background: rgba(0,0,0,0.2);
@@ -116,7 +113,8 @@
     }
     header {
       margin-top: 20px;
-      h2 {
+      height: 100px;
+      /*h2 {
         color: #333;
         text-align: center;
         text-transform: uppercase;
@@ -124,7 +122,7 @@
         padding-top: 10px;
         padding-bottom: 10px;
         font-weight: 700;
-      }
+      }*/
     }
     .bucket-content {
       margin-top: 15px;

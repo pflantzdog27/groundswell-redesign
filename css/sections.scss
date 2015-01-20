@@ -50,7 +50,7 @@
         }
         .section-right-column {
           @include flexbox;
-          min-height: 350px;
+          min-height: 250px;
           @include flexAlignItems(center);
           @include flexwrap(wrap);
         }
@@ -201,7 +201,9 @@
     bottom: 0;
   }
 }
-
+#contact {
+  margin-top: 50px;
+}
 #contact-form {
     > div {
       padding: 20px 0;

@@ -7,7 +7,7 @@
 <header id="intro-section-wrapper">
     <div id="intro-section">
         <!-- video -->
-        <video id="homepage-videoBG" class="video-js hidden-sm hidden-xs" data-setup='{
+        <video id="homepage-videoBG" class="video-js hidden-xs" data-setup='{
                     "controls" : false,
                     "autoplay" : true,
                     "preload" : "auto",
@@ -147,7 +147,8 @@
     <div class="container">
         <div class="row">
             <header class="col-sm-12">
-                <h2>Let's make faith-rooted change together. <a href="#">Talk to Us</a></h2>
+                <h2>Let's make faith-rooted change together.</h2>
+                <button class="btn gs-btn gs-btn-blue"><a href="#">Talk to Us</a></button>
             </header>
         </div>
     </div>

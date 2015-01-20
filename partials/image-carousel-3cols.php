@@ -6,31 +6,31 @@
 
     <div class="carousel-inner" role="listbox">
         <div class="item active" id="carousel-id-1">
-            <figure class="col-sm-3">
-               <img class="img-responsive" src="http://placehold.it/400x300" alt="Title">
+            <figure class="col-xs-6 col-sm-3">
+                <a href="#"><img class="img-responsive" src="http://placehold.it/400x300" alt="Title"></a>
             </figure>
-            <figure class="col-sm-3">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="Title">
+            <figure class="col-xs-6 col-sm-3">
+                <a href="#"><img class="img-responsive" src="http://placehold.it/400x300" alt="Title"></a>
             </figure>
-            <figure class="col-sm-3">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="Title">
+            <figure class="col-xs-6 col-sm-3">
+                <a href="#"><img class="img-responsive" src="http://placehold.it/400x300" alt="Title"></a>
             </figure>
-            <figure class="col-sm-3">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="Title">
+            <figure class="col-xs-6 col-sm-3">
+                <a href="#"><img class="img-responsive" src="http://placehold.it/400x300" alt="Title"></a>
             </figure>
         </div>
         <div class="item" id="carousel-id-2">
-            <figure class="col-sm-3">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="Title">
+            <figure class="col-xs-6 col-sm-3">
+                <a href="#"><img class="img-responsive" src="http://placehold.it/400x300" alt="Title"></a>
             </figure>
-            <figure class="col-sm-3">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="Title">
+            <figure class="col-xs-6 col-sm-3">
+                <a href="#"><img class="img-responsive" src="http://placehold.it/400x300" alt="Title"></a>
             </figure>
-            <figure class="col-sm-3">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="Title">
+            <figure class="col-xs-6 col-sm-3">
+                <a href="#"><img class="img-responsive" src="http://placehold.it/400x300" alt="Title"></a>
             </figure>
-            <figure class="col-sm-3">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="Title">
+            <figure class="col-xs-6 col-sm-3">
+                <a href="#"><img class="img-responsive" src="http://placehold.it/400x300" alt="Title"></a>
             </figure>
         </div>
     </div>

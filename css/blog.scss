@@ -18,8 +18,12 @@
           position: relative;
           margin-bottom: 15px;
           background: #eaeaea;
+            &:hover img {
+              @include scale(1.25);
+            }
             img {
               margin: 0 auto;
+              @include transition(all 0.5s);
             }
             figcaption {
               position: absolute;

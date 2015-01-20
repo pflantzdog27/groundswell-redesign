@@ -77,7 +77,7 @@
         <div class="section-template parallax single-column-section row">
             <h2 class="section-title col-sm-12">Photo Gallery</h2>
             <div class="col-sm-12">
-                <?php include('partials/image-carousel-4cols.php');?>
+                <?php include('partials/photoGallery-buckets.php');?>
             </div>
         </div>
     </div>

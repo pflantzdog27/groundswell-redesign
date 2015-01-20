@@ -42,6 +42,7 @@ p {
   @include font-size(30px);
 }
 
+
 .blue-background {
   background: $gsBlue;
   padding: 3px;
@@ -205,7 +206,7 @@ button:active {
 }
 
 //CAROUSEL
-#photo-carousel {
+#photo-gallery {
   .carousel-indicators {
     bottom: -40px;
     li {
@@ -217,6 +218,8 @@ button:active {
   }
   figure {
     position: relative;
+    height: 260px;
+    overflow: hidden;
       figcaption {
         position: absolute;
         bottom: 0;
@@ -227,6 +230,9 @@ button:active {
           h3 {
             padding: 0 5px;
           }
+      }
+      img {
+        width: 100%;
       }
   }
   .photo-count {
@@ -245,6 +251,7 @@ button:active {
   }
 }
 .carousel-control {
+  width: 30px;
   span {
     position: absolute;
     top: 50%;

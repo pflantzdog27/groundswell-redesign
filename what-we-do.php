@@ -30,7 +30,7 @@
         <div class="row">
             <article class="col-sm-12 col-md-4">
                 <header style="background: url(images/action.svg) no-repeat 0 0;">
-                    <h2>Action</h2>
+                    <h2 class="sr-only">Action</h2>
                 </header>
                 <div class="bucket-content">
                     <p>Need to start and run a CAMPAIGN online? We can help with that.</p>
@@ -43,7 +43,7 @@
             </article>
             <article class="col-sm-12 col-md-4">
                 <header style="background: url(images/trainings.svg) no-repeat 50% 0;">
-                    <h2>Trainings</h2>
+                    <h2 class="sr-only">Trainings</h2>
                 </header>
                 <div class="bucket-content">
                     <p>We offer TRAININGS that help faith leaders and organizers get better at faith-rooted organizing in a modern age—and with digital tools! Plus, story-telling for social change, speaking  prophetically in the media, and more.</p>
@@ -55,7 +55,7 @@
             </article>
             <article class="col-sm-12 col-md-4">
                 <header style="background: url(images/inspiration.svg) no-repeat 50% 0;">
-                    <h2>Inspiration</h2>
+                    <h2 class="sr-only">Inspiration</h2>
                 </header>
                 <div class="bucket-content">
                     <p>Facebook, Twitter, YouTube, and other social media channels are today’s pulpit, yet faith leaders preaching love, justice, and peace aren’t getting enough attention online.</p>
