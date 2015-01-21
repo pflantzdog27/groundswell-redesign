@@ -2718,21 +2718,8 @@ body.vjs-full-window {
   #team-graphic li header {
     text-align: center;
     cursor: pointer; }
-    #team-graphic li header:hover img {
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      -o-transform: scale(1.1);
-      transform: scale(1.1);
-      margin-top: -5px;
-      margin-bottom: 5px; }
     #team-graphic li header img {
-      opacity: 1;
-      -o-transition: all 0.5s;
-      -ms-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s; }
+      opacity: 1; }
     #team-graphic li header h4 {
       font-weight: 700;
       border-top: 5px solid #44aeea;

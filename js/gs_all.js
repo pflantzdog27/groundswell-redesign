@@ -88,7 +88,7 @@ GS.backgroundVideo = new function() {
                 isPlaying = false;
             });
 
-            //pause/pause video
+            // pause/pause video
             var isPlaying = !myPlayer.paused();
             $('#playback-control').click(function() {
                 if(isPlaying == true) {
@@ -97,6 +97,7 @@ GS.backgroundVideo = new function() {
                     isPlaying = false;
                 } else {
                     myPlayer.play();
+                    myPlayer.posterImage.hide();
                     $(this).removeClass('icon-play').addClass('icon-pause');
                     isPlaying = true;
                 }
@@ -109,24 +110,30 @@ GS.teamDisplay = new function() {
     var teamMember = $('#team-graphic li');
     this.clickAction = function() {
         teamMember.click(function() {
-            var hiddenHtml = $(this).find('.hidden').html();
-            teamMember.find('h4').css({color : '#44aeea'});
-            teamMember.removeClass('active');
-            $(this).find('h4').css({color : '#ea5a3a;'});
-            teamMember.find('img').animate({opacity : 0.7},400);
-            $(this).addClass('active');
-
-            if($(window).width() < 768) {
-                var scrollHere = parseInt($("#team-member-bio").offset().top);
-                $('html, body').animate({
-                    scrollTop: scrollHere - 60
-                }, 500);
-            }
-
-            if($('#team-member-bio').length <= 0) {
-                $('#team-member-bio').html(hiddenHtml).slideDown(300);
+            if($(this).hasClass('active')){
+                $('#team-member-bio').slideUp(300);
+                $(this).removeClass('active');
             } else {
-                $('#team-member-bio').html(hiddenHtml);
+                var hiddenHtml = $(this).find('.hidden').html();
+                teamMember.find('h4').css({color: '#44aeea'});
+                teamMember.removeClass('active');
+                $(this).find('h4').css({color: '#ea5a3a;'});
+                teamMember.find('img').animate({opacity: 0.7}, 400);
+                $(this).addClass('active');
+                $('#team-member-bio').html(hiddenHtml).slideDown(300);
+
+                if ($(window).width() < 768) {
+                    var scrollHere = parseInt($("#team-member-bio").offset().top);
+                    $('html, body').animate({
+                        scrollTop: scrollHere - 60
+                    }, 500);
+                }
+
+                if ($('#team-member-bio').length <= 0) {
+                    $('#team-member-bio').html(hiddenHtml).slideDown(300);
+                } else {
+                    $('#team-member-bio').html(hiddenHtml);
+                }
             }
         });
     };

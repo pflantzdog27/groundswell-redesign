@@ -43,7 +43,8 @@
                 </article>
                 <footer class="row">
                     <div class="col-sm-12">
-                        <strong>More stuff like this:</strong> <small><a href="#">Category 1</a>, <a href="#">Category 2</a></small><br>
+                        <strong>If you like this post: </strong> <small><a href="#">Subscribe</a> or <a href="#">Donate</a></small><br>
+                        <strong>Topics: </strong> <small><a href="#">Category 1</a>, <a href="#">Category 2</a></small><br>
                         <strong>About: </strong><small>Credit or info goes here</small><br>
                     </div>
                 </footer>

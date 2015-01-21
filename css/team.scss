@@ -1,7 +1,7 @@
 #team-graphic {
   li {
     max-width: 16.66%;
-    display: block; 
+    display: block;
     float: left;
       @include desktops {
         max-width: 33.33%;
@@ -12,14 +12,8 @@
       header {
         text-align: center;
         cursor: pointer;
-          &:hover img {
-            @include scale(1.1);
-            margin-top: -5px;
-            margin-bottom: 5px;
-          }
           img {
             opacity: 1;
-            @include transition(all 0.5s);
           }
           h4 {
             font-weight: 700;
