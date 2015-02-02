@@ -49,6 +49,7 @@
     <script src="js/mustache.js"></script>
     <script src="js/jquery.counter.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.cookie.js"></script>
     <script src="js/gs_all.js"></script>
 
 

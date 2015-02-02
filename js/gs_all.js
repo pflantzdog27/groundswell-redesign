@@ -6,6 +6,27 @@ if(!GS){
 /* ===========================================
         FUNCTIONS
 // ========================================== */
+GS.cookies = new function()  {
+   var slideUpWindow = 'slideDisplayWindow';
+   this.slideUpOverlayDisplay = function() {
+       var distance = $('#footer').offset().top,
+           initSlider = parseInt(distance - 300);
+           $window = $(window);
+       $window.scroll(function() {
+           if ( $window.scrollTop() >= initSlider || $(window).scrollTop() == ($(document).height() - $(window).height()) && $.cookie('slideOverlay') != 'false') {
+               $('<aside></aside>').attr('id',slideUpWindow).addClass('container').html('<div class="col-sm-6 col-xs-12"><span class="closePopup icon-cross"></span><h2>The title here</h2><article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sapien tortor, hendrerit ac eleifend id, tincidunt nec massa. Ut a ullamcorper augue. Etiam bibendum maximus dolor, quis congue diam interdum vel. Donec ut nisl elementum, consectetur ante sit amet, fermentum ligula.</article><button class="btn gs-btn gs-btn-white"><span class="icon-facebook"></span> Like Us on Facebook</button></div>').appendTo('body');
+               $('#'+slideUpWindow).animate({bottom : 0}, 600);
+           } else {
+           }
+       });
+   };
+   this.removeOverlay = function() {
+        $('body').on('click','.closePopup',function() {
+            $.cookie('slideOverlay', 'false', { expires: 30, path: '/' });
+            $('#'+slideUpWindow).animate({bottom : '-1000px'}, 600);
+        });
+   }
+};
 
 GS.navigation = new function(){
     var searchButton = $('.search-toggle');
@@ -47,6 +68,12 @@ GS.navigation = new function(){
                 $('#primary-navigation-wrapper').css('box-shadow', 'none');
             }
         });
+    };
+
+    this.socialIcons = function() {
+       $('#mobile-share-bar').css('display','block');
+       $('.social-link-bar').css('display','none') ;
+        $('.navbar-brand').css('display','none') ;
     }
 
 };
@@ -67,12 +94,14 @@ GS.forms = new function() {
 GS.backgroundVideo = new function() {
     this.sizingFunction = function() {
         var videoID = 'homepage-videoBG';
-        _V_(videoID).ready(function(){
-            var myPlayer = videojs(videoID);
-            var aspectRatio = 4/9.4;
-            var width = document.getElementById(videoID).parentElement.offsetWidth;
-            myPlayer.width(width).height( width * aspectRatio );
-            $('#hero').find('.container').height(width * aspectRatio);
+        var myPlayer = videojs(videoID);
+        var aspectRatio = 4/9.4;
+        var width = document.getElementById(videoID).parentElement.offsetWidth;
+        myPlayer.width(width).height( width * aspectRatio );
+        $('#hero').find('.container').height(width * aspectRatio);
+
+        videojs(videoID).ready(function(){
+
 
             function resizeVideoJS(){
                 var width = document.getElementById(videoID).parentElement.offsetWidth;
@@ -580,7 +609,7 @@ $(function() {
         //scrollorama
         GS.scrolloramaEffects.mainNavBackground();
         GS.scrolloramaEffects.introSection();
-        GS.scrolloramaEffects.steps('#action');
+        GS.scrolloramaEffects.steps('#action'); // Need to provide class and not ID so that these animations work on all types of sections that have numbered content
         GS.scrolloramaEffects.steps('#training');
         GS.scrolloramaEffects.steps('#inspiration');
         GS.scrolloramaEffects.parallax('#blog');
@@ -617,7 +646,7 @@ $(function() {
         GS.navigation.navigationBoxShadow();
         GS.teamDisplay.clickAction();
         GS.teamDisplay.hoverAction();
-        GS.carousel.carouselInit('#photo-carousel');
+        GS.carousel.carouselInit('#photo-gallery');
         GS.scrolloramaEffects.parallax('#fine-print');
     }
 
@@ -652,11 +681,17 @@ $(function() {
         GS.blog.selectMenu();
         GS.blog.affixSocialIcons();
         GS.scrolloramaEffects.blog_single_video('.blog-two-columns');
+        if($(window).width() < 768) {
+            GS.navigation.socialIcons();
+        }
     }
 
     if(bodyClass == 'blog-single-video') { // Blog VIDEO
         GS.scrolloramaEffects.blog_single_video('.blog-single-video');
         GS.blog.selectMenu();
+        if($(window).width() < 768) {
+            GS.navigation.socialIcons();
+        }
     }
 
     if(bodyClass == 'blog-index' || bodyClass == 'home') { // BLOG AND HOME
@@ -701,7 +736,8 @@ $(function() {
 
 
 
-
+GS.cookies.slideUpOverlayDisplay();
+GS.cookies.removeOverlay();
 
 });
 

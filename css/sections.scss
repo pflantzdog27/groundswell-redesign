@@ -10,11 +10,15 @@
       left: 0;
       @include font-size(300px);
       font-style: italic;
-      color: rgba(0,0,0,0.4);
+      color: rgba(255,255,255,1);
       font-family: $numberCustomFont;
+      font-weight: 900;
       line-height: .6;
         span {
           padding-right: 15px;
+        }
+        &:nth-child(1) {
+          color: rgba(0,0,0,0.1);
         }
     }
     .section-template {
@@ -115,12 +119,18 @@
   min-height: 600px;
   padding-bottom: 300px;
     .section-number {
-      color: rgba(255,255,255,0.2);
+      color: rgba(255,255,255,0.4);
     }
     .section-overlay {
       background: #fff;
       color: #333;
     }
+}
+
+#inspiration {
+  .section-number {
+    color: rgba(255,255,255,0.4);
+  }
 }
 
 #fine-print {
@@ -168,7 +178,7 @@
       }
       .faq-question {
         padding-left: 25px;
-        font-weight: 700;
+        font-weight: 900;
           &.active {
             color: $gsBlue;
           }

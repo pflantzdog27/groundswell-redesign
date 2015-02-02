@@ -14,16 +14,16 @@
                     "poster": "images/training-bg.jpg",
                     "muted" : true
                 }'>
-            <source src="video/homepageBanner.mp4" type='video/webm' />
-            <source src="video/homepageBanner.mp4" type='video/mp4' />
-            <source src="video/homepageBanner.mp4" type='video/ogg' />
+            <source src="video/homepageBanner.mp4" type='video/mp4'>
+            <source src="video/homepageBanner.webm" type='video/webm'>
+            <source src="video/homepageBanner.ogv" type='video/ogg'>
             <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
         </video>
 
         <!-- hero message -->
         <div id="hero">
             <div class="container">
-                <div class="jumbotron col-sm-12 col-md-9 col-lg-7">
+                <div class="jumbotron col-sm-12 col-md-9 col-lg-8">
                     <h1>Inspiring<br> Faithful Action<br> to Heal and<br> Repair the World</h1>
                 </div>
             </div>

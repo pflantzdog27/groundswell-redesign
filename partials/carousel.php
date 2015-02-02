@@ -1,4 +1,4 @@
-<div id="inspiration-carousel" class="carousel slide" data-ride="carousel">
+<div id="inspiration-carousel" class="carousel slide">
     <ol class="carousel-indicators">
         <li data-target="#petitions" data-slide-to="carousel-id-1"></li>
         <li data-target="#petitions" data-slide-to="carousel-id-2"></li>

@@ -1,5 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-@import url(http://fonts.googleapis.com/css?family=Titillium+Web:900);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,900);
 @import 'glyphs';
 @import 'variable';
 @import 'mixins';
@@ -23,7 +22,7 @@
 body {
   font-size: 16px;
   font-family: $alphaCustomFont;
-  //visibility: hidden;
+  word-spacing: .047em;
 }
 
 a, button {
@@ -56,14 +55,14 @@ p {
 }
 
 strong {
-  font-weight: 700;
+  font-weight: 900;
   @include font-size(30px);
 }
 .gs-btn {
   @include border-radius(0);
   @include font-size(22px);
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 900;
   margin-top: 0;
   line-height: 1.6;
   padding: 7px 12px;
@@ -117,7 +116,7 @@ button:active {
 
 .section-title {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 900;
   padding-bottom: 20px;
 }
 
@@ -139,7 +138,7 @@ button:active {
       }
       h2 {
         @extend %imageBgH2;
-        font-weight: 700;
+        font-weight: 900;
         color: $gsBlue;
       }
       p {
@@ -171,7 +170,7 @@ button:active {
       display: inline-block;
       color: #fff;
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: 900;
       text-align: center;
       @include transition(all 0.5s);
         &.facebook a  {
@@ -331,7 +330,7 @@ button:active {
     border: 1px solid #eaeaea;
     color: #333;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 900;
     padding: 0 10px;
     line-height: 2;
     position: relative;
@@ -396,7 +395,27 @@ form {
       width: 100%;
     }
   }
+}
 
+// Cookies
+#slideDisplayWindow {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -1000px;
+  color: #fff;
+    > div {
+      background: rgba(234,90,58,0.8);
+      @include border-radius(5px 5px 0 0);
+      padding-bottom: 20px;
+      .closePopup {
+        @include font-size(30px);
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        cursor: pointer;
+      }
+    }
 }
 
 

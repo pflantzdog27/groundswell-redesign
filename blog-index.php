@@ -11,7 +11,7 @@
 
             <div class="select-menu col-sm-6 col-md-5 col-xs-12">
                 <div class="select-box">
-                    <h5>Category <span>Default Category</span> <b class="icon-arrow-down"></b></h5>
+                    <h5>Topics <span>Default Topic</span> <b class="icon-arrow-down"></b></h5>
                 </div>
                 <div class="select-options scroll-area">
                     <ul class="list-unstyled ">

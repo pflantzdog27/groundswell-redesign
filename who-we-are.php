@@ -72,7 +72,7 @@
     </div>
 </div>
 
-<section id="partners" class="content-section" style="color:#fff; background: #44aeea;">
+<section id="gallery" class="content-section" style="color:#fff; background: #44aeea;">
     <div class="container">
         <div class="section-template parallax single-column-section row">
             <h2 class="section-title col-sm-12">Photo Gallery</h2>

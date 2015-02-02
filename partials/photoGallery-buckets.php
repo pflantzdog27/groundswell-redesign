@@ -1,7 +1,7 @@
-<div id="photo-gallery" class="carousel slide" data-ride="carousel">
+<div id="photo-gallery" class="carousel slide">
     <ol class="carousel-indicators">
-        <li class="active" data-target="#photo-carousel" data-slide-to="0"></li>
-        <li data-target="#photo-carousel" data-slide-to="1"></li>
+        <li class="active" data-target="#photo-gallery" data-slide-to="0"></li>
+        <li data-target="#photo-gallery" data-slide-to="1"></li>
     </ol>
 
     <div class="carousel-inner" role="listbox">

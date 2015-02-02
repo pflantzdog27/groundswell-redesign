@@ -8,6 +8,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            <ul class="list-unstyled" id="mobile-share-bar" style="display:none;">
+                <li class="facebook"><a href="#"><i class="icon-facebook"></i> Share</a></li>
+                <li class="twitter"><a href="#"><i class="icon-twitter"></i> Tweet</a></li>
+                <li class="email"><a href="#"><i class="icon-mail"></i> Email</a></li>
+            </ul>
             <a class="navbar-brand" href="index.php"><img class="img-responsive" src="images/logo.svg" alt="Groundswell Logo"></a>
         </div>
 
