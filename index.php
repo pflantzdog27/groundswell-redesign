@@ -1,7 +1,7 @@
 <?php include('partials/header.php');?>
     <body>
     <div class="container">
-        <h4>Last Updated: <strong>Tuesday, 1/20/2015</strong></h4>
+        <h4>Last Updated: <strong>Tuesday, 2/02/2015</strong></h4>
         <table class="table table-striped">
             <thead>
             <tr>
@@ -46,14 +46,4 @@
         </table>
     </div>
 
-    <script src="js/jquery-2.1.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/videojs-3.2.0.js"></script>
-    <script src="js/jquery.superscrollorama.js"></script>
-    <script src="js/TweenMax.min.js"></script>
-    <script src="js/moment.min.js"></script>
-    <script src="js/jquery.mCustumScrollbar.3.0.5.min.js"></script>
-    <script src="js/mustache.js"></script>
-    <script src="js/gs_all.js"></script>
-    </body>
-</html>
+<?php include('partials/footer.php');?>

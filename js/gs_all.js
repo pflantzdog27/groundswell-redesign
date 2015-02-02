@@ -10,7 +10,7 @@ GS.cookies = new function()  {
    var slideUpWindow = 'slideDisplayWindow';
    this.slideUpOverlayDisplay = function() {
        var distance = $('#footer').offset().top,
-           initSlider = parseInt(distance - 300);
+           initSlider = parseInt(distance - 600);
            $window = $(window);
        $window.scroll(function() {
            if ( $window.scrollTop() >= initSlider || $(window).scrollTop() == ($(document).height() - $(window).height()) && $.cookie('slideOverlay') != 'false') {
